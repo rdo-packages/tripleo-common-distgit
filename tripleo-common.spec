@@ -3,7 +3,7 @@
 Name:           tripleo-common
 Summary:        Python library for code used by TripleO projects.
 Version:        0.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        ASL 2.0
 Group:          System Environment/Base
 URL:            https://github.com/rdo-management/tripleo-common
@@ -29,10 +29,10 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %build
 %{__python2} setup.py build
-%define include_tripleobuildimages %(if [ -f /usr/bin/tripleo-build-images ]; then echo "1" ; else echo "0"; fi )
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+%define include_tripleobuildimages %(if [ -f %{buildroot}/%{name}%{_bindir}/tripleo-build-images ]; then echo "1" ; else echo "0"; fi )
 
 
 %description
