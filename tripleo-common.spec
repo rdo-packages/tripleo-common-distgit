@@ -1,4 +1,5 @@
 %{?!_licensedir:%global license %%doc}
+%define _unpackaged_files_terminate_build 0
 
 Name:           tripleo-common
 Summary:        Python library for code used by TripleO projects.
@@ -32,8 +33,6 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
-%define include_tripleobuildimages %(if [ -f %{buildroot}/%{name}%{_bindir}/tripleo-build-images ]; then echo "1" ; else echo "0"; fi )
-
 
 %description
 Python library for code used by TripleO projects.
@@ -42,9 +41,6 @@ Python library for code used by TripleO projects.
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
 %{python2_sitelib}/tripleo_common*
-%if %include_tripleobuildimages
-%{_bindir}/tripleo-build-images
-%endif
 %exclude %{python2_sitelib}/tripleo_common/test*
 
 
