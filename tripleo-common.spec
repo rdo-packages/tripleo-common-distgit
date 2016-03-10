@@ -44,6 +44,7 @@ Python library for code used by TripleO projects.
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_datadir}/tripleo-common
 %{_prefix}/lib/heat/undercloud_heat_plugins
+%{_bindir}/upgrade-non-controller.sh
 
 
 %changelog
