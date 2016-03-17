@@ -42,7 +42,6 @@ Python library for code used by TripleO projects.
 %doc README.rst AUTHORS ChangeLog
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
-%{_datadir}/tripleo-common
 %{_prefix}/lib/heat/undercloud_heat_plugins
 
 
