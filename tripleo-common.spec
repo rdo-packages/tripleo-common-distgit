@@ -3,8 +3,8 @@
 
 Name:           tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        0.1
-Release:        3%{?dist}
+Version:        XXX
+Release:        XXX
 License:        ASL 2.0
 Group:          System Environment/Base
 URL:            https://github.com/rdo-management/tripleo-common
