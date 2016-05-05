@@ -33,6 +33,12 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+if [ -d workbooks ]; then
+  install -d -m 755 %{buildroot}/%{_datadir}/%{name}
+  cp -ar workbooks %{buildroot}/%{_datadir}/%{name}
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
+fi
 
 %description
 Python library for code used by TripleO projects.
@@ -44,7 +50,7 @@ Python library for code used by TripleO projects.
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_prefix}/lib/heat/undercloud_heat_plugins
 %{_bindir}/upgrade-non-controller.sh
-
+%{_datadir}/%{name}
 
 %changelog
 
