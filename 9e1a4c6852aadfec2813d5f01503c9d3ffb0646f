@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dabed58f_e312ce57",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2016-05-17T13:25:35Z",
+      "side": 1,
+      "message": "Added Obsoletes in later patchset",
+      "revId": "9e1a4c6852aadfec2813d5f01503c9d3ffb0646f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
