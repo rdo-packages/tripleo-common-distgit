@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dabed58f_d85d394a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2016-05-17T11:45:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dabed58f_983341f6",
+      "revId": "9d54991bca3d98b78ef5b174c4b622400fd71bea",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dabed58f_1de8a37b",
         "filename": "openstack-tripleo-common.spec",
         "patchSetId": 1
@@ -47,6 +65,24 @@
       "writtenOn": "2016-05-15T23:28:20Z",
       "side": 1,
       "message": "Needs to obsoletes previous versions, and preferably, we need to use a fixed version here.",
+      "revId": "9d54991bca3d98b78ef5b174c4b622400fd71bea",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dabed58f_f85a7d4f",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2016-05-17T11:45:23Z",
+      "side": 1,
+      "message": "Done - but with generic version Obsoletes entry",
+      "parentUuid": "dabed58f_3ded678c",
       "revId": "9d54991bca3d98b78ef5b174c4b622400fd71bea",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
