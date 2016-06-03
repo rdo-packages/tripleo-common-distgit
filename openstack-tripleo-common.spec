@@ -46,6 +46,10 @@ if [ -d workbooks ]; then
 else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
+if [ -d image-yaml ]; then
+  install -d -m 755 %{buildroot}/%{_datadir}/%{name}
+  cp -ar image-yaml %{buildroot}/%{_datadir}/%{name}
+fi
 
 %description
 Python library for code used by TripleO projects.
