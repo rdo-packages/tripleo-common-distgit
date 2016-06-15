@@ -41,15 +41,14 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+# for backwards compatibility, maintain /usr/share/openstack-tripleo-common
+ln -s %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/${_datadir}/%{name}
+
 if [ -d workbooks ]; then
-  install -d -m 755 %{buildroot}/%{_datadir}/%{name}
-  cp -ar workbooks %{buildroot}/%{_datadir}/%{name}
+  install -d -m 755 %{buildroot}/%{_datadir}/%{upstream_name}
+  cp -ar workbooks %{buildroot}/%{_datadir}/%{upstream_name}
 else
-  mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
-fi
-if [ -d image-yaml ]; then
-  install -d -m 755 %{buildroot}/%{_datadir}/%{name}
-  cp -ar image-yaml %{buildroot}/%{_datadir}/%{name}
+  mkdir -p %{buildroot}/%{_datadir}/%{upstream_name}/workbooks
 fi
 
 %description
@@ -64,6 +63,7 @@ Python library for code used by TripleO projects.
 %{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
 %{_datadir}/%{name}
+%{_datadir}/%{upstream_name}
 
 %changelog
 
