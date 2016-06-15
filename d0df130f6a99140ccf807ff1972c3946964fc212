@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a6b29fe_f64d20c6",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-06-15T18:08:27Z",
+      "side": 1,
+      "message": "ln -s %{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}\n\nand move it below, so that %{buildroot}/%{_datadir} is ensured",
+      "revId": "d0df130f6a99140ccf807ff1972c3946964fc212",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
