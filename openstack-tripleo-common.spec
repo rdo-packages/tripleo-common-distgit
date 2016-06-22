@@ -9,7 +9,6 @@ Summary:        Python library for code used by TripleO projects.
 Version:        XXX
 Release:        XXX
 License:        ASL 2.0
-Group:          System Environment/Base
 URL:            https://github.com/rdo-management/tripleo-common
 
 Source0:        https://pypi.python.org/packages/source/t/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
