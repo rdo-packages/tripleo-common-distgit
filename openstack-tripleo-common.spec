@@ -40,16 +40,14 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
+ln -s %{_datadir}/%{name} %{buildroot}%{_datadir}/%{upstream_name}
 
 if [ -d workbooks ]; then
-  install -d -m 755 %{buildroot}/%{_datadir}/%{upstream_name}
-  cp -ar workbooks %{buildroot}/%{_datadir}/%{upstream_name}
+  cp -ar workbooks %{buildroot}/%{_datadir}/%{name}/
 else
-  mkdir -p %{buildroot}/%{_datadir}/%{upstream_name}/workbooks
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
-
-# for backwards compatibility, maintain /usr/share/openstack-tripleo-common
-ln -s %{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
 
 %description
 Python library for code used by TripleO projects.
