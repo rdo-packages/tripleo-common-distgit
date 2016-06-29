@@ -40,8 +40,17 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
-mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
-ln -s %{_datadir}/%{name} %{buildroot}%{_datadir}/%{upstream_name}
+if [ -d %{buildroot}/%{_datadir}/%{upstream_name} ]; then
+  mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
+else
+  # Before https://review.openstack.org/#/c/327830/3/setup.cfg
+  mkdir -p %{buildroot}/%{_datadir}/%{name}
+  if [ -d image-yaml ]; then
+    install -d -m 755 %{buildroot}/%{_datadir}/%{name}
+    cp -ar image-yaml %{buildroot}/%{_datadir}/%{name}
+  fi
+fi
+ln -s %{name} %{buildroot}%{_datadir}/%{upstream_name}
 
 if [ -d workbooks ]; then
   cp -ar workbooks %{buildroot}/%{_datadir}/%{name}/
