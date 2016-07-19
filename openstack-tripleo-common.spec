@@ -21,6 +21,7 @@ BuildRequires:  python-pbr
 Requires: python-heatclient
 Requires: python-oslo-config >= 2:2.3.0
 Requires: python-oslo-log >= 1.8.0
+Requires: python-docker-py
 Requires: instack-undercloud
 
 
