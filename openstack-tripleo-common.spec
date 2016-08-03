@@ -70,6 +70,8 @@ Python library for code used by TripleO projects.
 %{_prefix}/lib/heat/undercloud_heat_plugins
 %{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
+%{_bindir}/upload-puppet-modules
+%{_bindir}/upload-swift-artifacts
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 
