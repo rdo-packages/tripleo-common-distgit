@@ -77,3 +77,4 @@ Python library for code used by TripleO projects.
 
 %changelog
 
+# REMOVEME: error caused by commit 
