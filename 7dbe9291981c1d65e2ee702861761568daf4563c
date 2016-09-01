@@ -16,6 +16,24 @@
       "revId": "7dbe9291981c1d65e2ee702861761568daf4563c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "facab960_82bb9a71",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2016-09-01T10:10:42Z",
+      "side": 1,
+      "message": "Yes and no.\n\nTripleo-validations provides a dependency (ansible dynamic inventory script) for run-validation, but it only becomes a requirement if you want to run the validations workflows.\n\nI would add it to the Recommends or Suggests if it were a deb package, but I don\u0027t think rpm has such concept of loose requirement.",
+      "parentUuid": "facab960_42c192e3",
+      "revId": "7dbe9291981c1d65e2ee702861761568daf4563c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
