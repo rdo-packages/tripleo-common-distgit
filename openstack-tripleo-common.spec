@@ -59,6 +59,8 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
 
+install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
+
 %description
 Python library for code used by TripleO projects.
 
@@ -72,8 +74,10 @@ Python library for code used by TripleO projects.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
+%{_bindir}/run-validation
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
+%{_sysconfdir}/sudoers.d/%{upstream_name}
 
 %changelog
 
