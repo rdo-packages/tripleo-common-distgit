@@ -11,7 +11,7 @@ Release:        XXX
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
-Source0:        https://pypi.python.org/packages/source/t/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
