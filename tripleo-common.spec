@@ -6,13 +6,13 @@
 
 Name:           tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        2.0.0
+Version:        2.1.0
 Release:        1%{?dist}
 License:        ASL 2.0
 Group:          System Environment/Base
 URL:            https://github.com/rdo-management/tripleo-common
 
-Source0: https://pypi.python.org/packages/source/t/tripleo-common/tripleo-common-%{version}%{?milestone}.tar.gz
+Source0: https://pypi.io/packages/source/t/tripleo-common/tripleo-common-%{version}%{?milestone}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python-setuptools
@@ -50,6 +50,9 @@ Python library for code used by TripleO projects.
 
 
 %changelog
+* Tue Sep 13 2016 Haikel Guemar <hguemar@fedoraproject.org> 2.1.0-1
+- Update to 2.1.0
+
 
 * Wed Mar 30 2016 RDO <rdo-list@redhat.com> 2.0.0-0.1
 -  Upstream 2.0.0 
