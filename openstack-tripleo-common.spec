@@ -24,6 +24,7 @@ Requires: python-oslo-log >= 1.14.0
 Requires: python-oslo-utils >= 3.16.0
 Requires: python-docker-py
 Requires: instack-undercloud
+Requires: python-passlib
 
 
 Provides:  tripleo-common = %{version}-%{release}
