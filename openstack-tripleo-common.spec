@@ -6,7 +6,7 @@
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        5.3.0
+Version:        5.4.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
@@ -82,6 +82,9 @@ Python library for code used by TripleO projects.
 %{_sysconfdir}/sudoers.d/%{upstream_name}
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 5.4.0-1
+- Update to 5.4.0
+
 * Tue Oct 18 2016 Alfredo Moralejo <amoralej@redhat.com> 5.3.0-1
 - Update to 5.3.0
 
