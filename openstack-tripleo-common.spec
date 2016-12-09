@@ -77,6 +77,7 @@ Python library for code used by TripleO projects.
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
+%{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
