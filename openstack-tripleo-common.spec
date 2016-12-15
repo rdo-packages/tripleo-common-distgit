@@ -2,7 +2,6 @@
 %global upstream_name tripleo-common
 
 %{?!_licensedir:%global license %%doc}
-%define _unpackaged_files_terminate_build 0
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
