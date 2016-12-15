@@ -71,12 +71,7 @@ Python library for code used by TripleO projects.
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_prefix}/lib/heat/undercloud_heat_plugins
-%{_bindir}/upgrade-non-controller.sh
-%{_bindir}/tripleo-build-images
-%{_bindir}/upload-puppet-modules
-%{_bindir}/upload-swift-artifacts
-%{_bindir}/run-validation
-%{_bindir}/create_freeipa_enroll_envfile.py
+%{_bindir}/*
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
