@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab399f4_6326906a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-12-21T23:12:58Z",
+      "side": 1,
+      "message": "Actually, missing part is Fred\u0027s change in triplo-ci:\nhttps://review.openstack.org/388791",
+      "revId": "c55414a6d51436401c33b73a3b64d172e32f5b32",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
