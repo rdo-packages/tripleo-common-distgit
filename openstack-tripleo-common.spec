@@ -60,6 +60,18 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
 
+if [ -d contrib ]; then
+  cp -ar contrib %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/contrib
+fi
+
+if [ -d heat_docker_agent ]; then
+  cp -ar heat_docker_agent %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/heat_docker_agent
+fi
+
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
 %description
