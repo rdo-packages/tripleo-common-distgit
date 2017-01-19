@@ -85,6 +85,14 @@ install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_nam
 %description
 Python library for code used by TripleO projects.
 
+%package devtools
+Summary: A collection of tools for TripleO developers and CI
+Requires: %{name} = %{version}-%{release}
+
+%description devtools
+This package installs the TripleO tools for developers and CI that typically
+don't fit in a product.
+
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
@@ -100,6 +108,9 @@ Python library for code used by TripleO projects.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
+
+%files devtools
+%{_bindir}/pull-puppet-modules
 
 %changelog
 * Mon Mar 06 2017 Alfredo Moralejo <amoralej@redhat.com> 6.0.0-1
