@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_16ad0d89",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2017-01-19T17:41:19Z",
+      "side": 1,
+      "message": "This seems to be more of a devel type script than a production level script.  If you are installing from RPM\u0027s it seems like a bad idea to update the rpm controlled code with something from the internet.",
+      "revId": "ca9f54c63372968ad076af15b7cb3f5c4c0be466",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
