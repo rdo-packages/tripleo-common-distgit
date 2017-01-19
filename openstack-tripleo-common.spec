@@ -93,5 +93,16 @@ Python library for code used by TripleO projects.
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
 
+%package -n openstack-tripleo-common-devtools
+Summary: A collection of tools for TripleO developers and CI
+Requires: openstack-tripleo-common
+
+%description -n openstack-tripleo-common-devtools
+This package installs the TripleO tools for developers and CI that typically
+don't fit in a product.
+
+%files -n openstack-tripleo-common-devtools
+%{_bindir}/pull-puppet-modules
+
 %changelog
 
