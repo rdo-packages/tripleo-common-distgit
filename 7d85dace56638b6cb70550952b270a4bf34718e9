@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_b19e2b55",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T12:20:44Z",
+      "side": 1,
+      "message": "not a requirement, but normally, you\u0027ll see %package and %description grouped together for all subpackages",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_3173fb4e",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T12:20:44Z",
+      "side": 1,
+      "message": "convention is to just do:\n\n%package devtools\n\nthe %name is automatically pre-pended",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_d1a2bf99",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T12:20:44Z",
+      "side": 1,
+      "message": "Probably best if we do \nRequires:  openstack-tripleo-common \u003d %{version}-%{release}",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_518f8f23",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T12:20:44Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_71949337",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T12:20:44Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
