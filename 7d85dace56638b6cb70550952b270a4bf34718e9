@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dab895d6_31d85b1d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-01-20T13:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dab895d6_b19e2b55",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dab895d6_3173fb4e",
         "filename": "openstack-tripleo-common.spec",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2017-01-20T12:20:44Z",
       "side": 1,
       "message": "convention is to just do:\n\n%package devtools\n\nthe %name is automatically pre-pended",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_b1ec6bc9",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-01-20T13:36:44Z",
+      "side": 1,
+      "message": "Thanks for the tip, I didn\u0027t know.",
+      "parentUuid": "dab895d6_3173fb4e",
       "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "dab895d6_d1d0fff9",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-01-20T13:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dab895d6_d1a2bf99",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dab895d6_518f8f23",
         "filename": "openstack-tripleo-common.spec",
         "patchSetId": 4
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "dab895d6_f1cd035f",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-01-20T13:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dab895d6_518f8f23",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dab895d6_71949337",
         "filename": "openstack-tripleo-common.spec",
         "patchSetId": 4
@@ -81,6 +153,24 @@
       "writtenOn": "2017-01-20T12:20:44Z",
       "side": 1,
       "message": "ditto",
+      "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_11db571c",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-01-20T13:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dab895d6_71949337",
       "revId": "7d85dace56638b6cb70550952b270a4bf34718e9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
