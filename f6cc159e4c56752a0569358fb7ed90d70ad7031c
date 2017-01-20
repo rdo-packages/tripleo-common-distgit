@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab895d6_7109f394",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T13:38:38Z",
+      "side": 1,
+      "message": "drop the -n",
+      "revId": "f6cc159e4c56752a0569358fb7ed90d70ad7031c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab895d6_91fe876a",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2017-01-20T13:38:38Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "f6cc159e4c56752a0569358fb7ed90d70ad7031c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
