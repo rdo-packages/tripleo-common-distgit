@@ -95,3 +95,4 @@ Python library for code used by TripleO projects.
 
 %changelog
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-common/commit/?id=a565c712dd085efae5d8000707139fbf6de245d0
