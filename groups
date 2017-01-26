@@ -1,6 +1,6 @@
 # UUID                                  	Group Name
 #
 1d0ab961038c001184803fa29e6f7a23d68ea5ec	openstack/tripleo-common-distgit-ptl
-b230b7a0ee9d41c73d7608eb72ae10c155ccc2c2	openstack/tripleo-common-distgit-core
 63673ea7f2ae6a5666566b1ea9f14e473d00f5a9	rdo-core
+b230b7a0ee9d41c73d7608eb72ae10c155ccc2c2	openstack/tripleo-common-distgit-core
 global:Registered-Users                 	Registered Users
