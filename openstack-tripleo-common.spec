@@ -17,6 +17,8 @@ BuildRequires:  git
 BuildRequires:  python-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
+Requires: GitPython
+Requires: python-gitdb
 Requires: python-heatclient
 Requires: python-oslo-config >= 2:3.14.0
 Requires: python-oslo-log >= 1.14.0
