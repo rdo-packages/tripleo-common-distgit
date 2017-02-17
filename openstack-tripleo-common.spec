@@ -17,10 +17,18 @@ BuildRequires:  git
 BuildRequires:  python-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
+
+Requires: python-jinja2
+Requires: python-glanceclient >= 2.5.0
 Requires: python-heatclient
+Requires: python-ironic-inspector-client >= 1.5.0
+Requires: python-ironicclient >= 1.11.0
+Requires: python-novaclient >= 1:7.1.0
+Requires: python-openstack-mistral >= 3.0.0
 Requires: python-oslo-config >= 2:3.14.0
-Requires: python-oslo-log >= 1.14.0
-Requires: python-oslo-utils >= 3.16.0
+Requires: python-oslo-log >= 3.11.0
+Requires: python-oslo-utils >= 3.18.0
+Requires: python-six >= 1.9.0
 Requires: python-docker-py
 Requires: instack-undercloud
 Requires: python-passlib
