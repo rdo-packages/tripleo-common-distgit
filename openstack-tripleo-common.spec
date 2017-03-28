@@ -91,6 +91,7 @@ Python library for code used by TripleO projects.
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_prefix}/lib/heat/undercloud_heat_plugins
+%{_binder}/pull-puppet-modules
 %{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
