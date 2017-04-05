@@ -74,6 +74,12 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/contrib
 fi
 
+if [ -d container-images ]; then
+  cp -ar container-images %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/container-images
+fi
+
 if [ -d heat_docker_agent ]; then
   cp -ar heat_docker_agent %{buildroot}/%{_datadir}/%{name}/
 else
