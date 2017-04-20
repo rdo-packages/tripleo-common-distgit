@@ -68,12 +68,6 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
 
-if [ -d contrib ]; then
-  cp -ar contrib %{buildroot}/%{_datadir}/%{name}/
-else
-  mkdir -p %{buildroot}/%{_datadir}/%{name}/contrib
-fi
-
 if [ -d container-images ]; then
   cp -ar container-images %{buildroot}/%{_datadir}/%{name}/
 else
