@@ -32,7 +32,7 @@ Requires: python-six >= 1.9.0
 Requires: python-docker-py
 Requires: instack-undercloud
 Requires: python-passlib
-
+Requires: python-mistral-lib >= 0.1.0
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
