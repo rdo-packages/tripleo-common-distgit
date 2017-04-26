@@ -34,6 +34,7 @@ Requires: instack-undercloud
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
+Requires: python-mistral-lib >= 0.2.0
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
