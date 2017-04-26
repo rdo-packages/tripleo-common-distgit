@@ -68,11 +68,10 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
 
-if [ -d container-images ]; then
-  cp -ar container-images %{buildroot}/%{_datadir}/%{name}/
-else
-  mkdir -p %{buildroot}/%{_datadir}/%{name}/container-images
-fi
+mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
+mv %{buildroot}/%{_datadir}/%{name}/container-images %{buildroot}/%{_datadir}/%{name}-containers/
+# compat symlink
+ln -s ../%{name}-containers/container-images  %{buildroot}/%{_datadir}/%{name}/
 
 if [ -d heat_docker_agent ]; then
   cp -ar heat_docker_agent %{buildroot}/%{_datadir}/%{name}/
@@ -84,6 +83,12 @@ install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_nam
 
 %description
 Python library for code used by TripleO projects.
+
+%package containers
+Summary: Files for building TripleO containers
+
+%description containers
+This package installs the files used to build containers for TripleO.
 
 %package devtools
 Summary: A collection of tools for TripleO developers and CI
@@ -108,6 +113,9 @@ don't fit in a product.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
+
+%files containers
+%{_datadir}/%{name}-containers/container-images
 
 %files devtools
 %{_bindir}/pull-puppet-modules
