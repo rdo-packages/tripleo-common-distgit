@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa201ad_24882a22",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 147
+      },
+      "writtenOn": "2017-04-27T20:46:20Z",
+      "side": 1,
+      "message": "Does this mean that this Requires can be removed? mistral is the only actual service package that tripleo-common depends on, so it would be good to remove it.",
+      "revId": "0a28b3708ed8e8445a073fe817ac60fe3c0df578",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
