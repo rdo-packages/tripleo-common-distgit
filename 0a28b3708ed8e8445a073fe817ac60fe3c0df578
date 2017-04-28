@@ -16,6 +16,24 @@
       "revId": "0a28b3708ed8e8445a073fe817ac60fe3c0df578",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_bffee336",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 282
+      },
+      "writtenOn": "2017-04-28T06:09:42Z",
+      "side": 1,
+      "message": "That\u0027s the ideia. It will be removed, but can\u0027t be done now. I have two patches to tripleo-common that remove that dependency but I need this spec to merge first so those patches can pass so those could be merged before removing this dependency",
+      "parentUuid": "baa201ad_24882a22",
+      "revId": "0a28b3708ed8e8445a073fe817ac60fe3c0df578",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
