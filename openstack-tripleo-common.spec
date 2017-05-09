@@ -109,6 +109,7 @@ don't fit in a product.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
+%{_bindir}/bootstrap_host_exec
 %{_bindir}/run-validation
 %{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
