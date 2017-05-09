@@ -1,6 +1,9 @@
-# UUID                                  	Group Name
-#
-1d0ab961038c001184803fa29e6f7a23d68ea5ec	openstack/tripleo-common-distgit-ptl
-63673ea7f2ae6a5666566b1ea9f14e473d00f5a9	rdo-core
-b230b7a0ee9d41c73d7608eb72ae10c155ccc2c2	openstack/tripleo-common-distgit-core
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+d451dd1d557191f6ffaf7b3b0c6c08e64910ae18	openstack/tripleo-common-core
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+19f569d69c9e72efaa1c71dfef9294d9c8c1d8be	openstack/tripleo-common-ptl
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
