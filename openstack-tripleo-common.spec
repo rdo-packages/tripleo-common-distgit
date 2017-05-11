@@ -25,7 +25,7 @@ Requires: python-oslo-utils >= 3.16.0
 Requires: python-docker-py
 Requires: instack-undercloud
 Requires: python-passlib
-
+Requires: python-paramiko
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
