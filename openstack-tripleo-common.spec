@@ -33,7 +33,7 @@ Requires: python-docker-py
 Requires: instack-undercloud
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
-
+Requires: python-paramiko
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
