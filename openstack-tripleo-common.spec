@@ -73,6 +73,8 @@ mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
 mv %{buildroot}/%{_datadir}/%{name}/container-images %{buildroot}/%{_datadir}/%{name}-containers/
 # compat symlink
 ln -s ../%{name}-containers/container-images  %{buildroot}/%{_datadir}/%{name}/
+# for container-base package
+cp %{buildroot}/%{_datadir}/%{name}-containers/docker-puppet.sh %{buildroot}/%{_bindir}/
 
 if [ -d heat_docker_agent ]; then
   cp -ar heat_docker_agent %{buildroot}/%{_datadir}/%{name}/
@@ -90,6 +92,14 @@ Summary: Files for building TripleO containers
 
 %description containers
 This package installs the files used to build containers for TripleO.
+
+%package container-base
+Summary: Package for the TripleO base container image
+Requires: puppet
+
+%description container-base
+This package installs the dependencies and files which are required on the base
+TripleO container image.
 
 %package devtools
 Summary: A collection of tools for TripleO developers and CI
@@ -117,6 +127,9 @@ don't fit in a product.
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
+
+%files container-base
+%{_bindir}/docker-puppet.sh
 
 %files devtools
 %{_bindir}/pull-puppet-modules
