@@ -82,6 +82,9 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
+# TODO(sbaker) remove in the change which packages bootstrap_host_exec
+rm -f %{buildroot}/%{_bindir}/bootstrap_host_exec
+
 %description
 Python library for code used by TripleO projects.
 
