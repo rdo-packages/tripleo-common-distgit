@@ -128,6 +128,7 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_bindir}/docker-puppet.sh
 
 %files devtools
 %{_bindir}/pull-puppet-modules
