@@ -82,9 +82,6 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
-# TODO(sbaker) remove in the change which packages docker-puppet.sh
-rm %{buildroot}/%{_bindir}/docker-puppet.sh || true
-
 %description
 Python library for code used by TripleO projects.
 
@@ -131,6 +128,7 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_bindir}/docker-puppet.sh
 
 %files devtools
 %{_bindir}/pull-puppet-modules
