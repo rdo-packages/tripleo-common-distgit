@@ -82,9 +82,6 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
-# TODO(sbaker) remove in the change which packages bootstrap_host_exec
-rm -f %{buildroot}/%{_bindir}/bootstrap_host_exec
-
 %description
 Python library for code used by TripleO projects.
 
@@ -93,6 +90,14 @@ Summary: Files for building TripleO containers
 
 %description containers
 This package installs the files used to build containers for TripleO.
+
+%package container-base
+Summary: Package for the TripleO base container image
+Requires: puppet
+
+%description container-base
+This package installs the dependencies and files which are required on the base
+TripleO container image.
 
 %package devtools
 Summary: A collection of tools for TripleO developers and CI
@@ -120,6 +125,9 @@ don't fit in a product.
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
+
+%files container-base
+%{_bindir}/bootstrap_host_exec
 
 %files devtools
 %{_bindir}/pull-puppet-modules
