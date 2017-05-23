@@ -6,7 +6,7 @@
 
 Name:           tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        2.1.0
+Version:        2.2.0
 Release:        1%{?dist}
 License:        ASL 2.0
 Group:          System Environment/Base
@@ -50,6 +50,9 @@ Python library for code used by TripleO projects.
 
 
 %changelog
+* Tue May 23 2017 Alfredo Moralejo <amoralej@redhat.com> 2.2.0-1
+- Update to 2.2.0
+
 * Tue Sep 13 2016 Haikel Guemar <hguemar@fedoraproject.org> 2.1.0-1
 - Update to 2.1.0
 
