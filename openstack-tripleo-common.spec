@@ -107,6 +107,14 @@ Requires: %{name} = %{version}-%{release}
 This package installs the TripleO tools for developers and CI that typically
 don't fit in a product.
 
+%package ceph
+Summary: Package for TripleO ceph dependencies and usage of ceph-ansible
+Requires: ceph-ansible
+Requires: %{name} = %{version}-%{release}
+
+%description ceph
+This package installs the dependencies and files required for deploying ceph.
+
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
@@ -122,6 +130,7 @@ don't fit in a product.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
+%exclude %{_datadir}/%{name}/workbooks/ceph-ansible.yaml
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
@@ -131,6 +140,9 @@ don't fit in a product.
 
 %files devtools
 %{_bindir}/pull-puppet-modules
+
+%files ceph
+%{_datadir}/%{name}/workbooks/ceph-ansible.yaml
 
 %changelog
 
