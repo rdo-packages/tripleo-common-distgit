@@ -33,6 +33,24 @@
       "revId": "7b6f634a2d3c7cf45ef139f79b00dcba3f3b6e90",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_b81fd808",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 272
+      },
+      "writtenOn": "2017-06-05T21:35:05Z",
+      "side": 1,
+      "message": "The missing file would be provided by the following: \n\n https://review.openstack.org/#/c/469644/",
+      "parentUuid": "9aa7fdbe_7826506a",
+      "revId": "7b6f634a2d3c7cf45ef139f79b00dcba3f3b6e90",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
