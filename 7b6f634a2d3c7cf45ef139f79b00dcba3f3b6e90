@@ -16,6 +16,23 @@
       "revId": "7b6f634a2d3c7cf45ef139f79b00dcba3f3b6e90",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_7826506a",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-06-05T21:14:52Z",
+      "side": 1,
+      "message": "File not found: /builddir/build/BUILDROOT/openstack-tripleo-common-7.0.1-0.20170605185154.e0d2548.el7.centos.x86_64/usr/share/openstack-tripleo-common/workbooks/ceph-ansible.yaml",
+      "revId": "7b6f634a2d3c7cf45ef139f79b00dcba3f3b6e90",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
