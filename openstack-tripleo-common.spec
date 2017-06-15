@@ -30,7 +30,6 @@ Requires: python-oslo-log >= 3.11.0
 Requires: python-oslo-utils >= 3.18.0
 Requires: python-six >= 1.9.0
 Requires: python-docker-py
-Requires: instack-undercloud
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
