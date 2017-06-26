@@ -133,3 +133,4 @@ don't fit in a product.
 
 %changelog
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-common/commit/?id=3a9301739650b511774fc9f6a5cde9ace243715e
