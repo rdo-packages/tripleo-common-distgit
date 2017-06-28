@@ -68,6 +68,12 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
 fi
 
+if [ -d playbooks ]; then
+  cp -ar playbooks %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/playbooks
+fi
+
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
 mv %{buildroot}/%{_datadir}/%{name}/container-images %{buildroot}/%{_datadir}/%{name}-containers/
 # compat symlink
