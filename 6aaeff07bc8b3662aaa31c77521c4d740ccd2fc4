@@ -16,6 +16,24 @@
       "revId": "6aaeff07bc8b3662aaa31c77521c4d740ccd2fc4",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_4cb1a5f7",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 314
+      },
+      "writtenOn": "2017-07-24T18:51:52Z",
+      "side": 1,
+      "message": "Hmm, from the gate it seems like this caused a conflict during package install because main package provides the base dir for \u0027healthcheck\u0027 dir, but requires \u0027containers\u0027 dir as dependency.\n\nTBH I did not try to install the pkgs, just to build them and did not notice the dependency tree is like that. Does it make sense to have a dependency like that? Shouldn\u0027t it be the opposite way ... eg. the subpackage require the main package? At least this make more sense to me, but I don\u0027t mind moving the healthcheck directory ownership from \u0027containers\u0027 subpackage to main package.",
+      "parentUuid": "9aa7fdbe_d17e0eae",
+      "revId": "6aaeff07bc8b3662aaa31c77521c4d740ccd2fc4",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
