@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9aa7fdbe_d17e0eae",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 62
+      },
+      "writtenOn": "2017-07-24T15:55:16Z",
+      "side": 1,
+      "message": "I think it should be fine, I\u0027ll let Steve Baker double check maybe.",
+      "revId": "6aaeff07bc8b3662aaa31c77521c4d740ccd2fc4",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
