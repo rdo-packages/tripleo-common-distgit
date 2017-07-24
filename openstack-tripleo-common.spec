@@ -74,6 +74,12 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/playbooks
 fi
 
+if [ -d healthcheck ]; then
+  cp -ar healthcheck %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/healthcheck
+fi
+
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
 mv %{buildroot}/%{_datadir}/%{name}/container-images %{buildroot}/%{_datadir}/%{name}-containers/
 # compat symlink
@@ -133,9 +139,9 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_datadir}/%{upstream_name}/healthcheck
 
 %files devtools
 %{_bindir}/pull-puppet-modules
 
 %changelog
-
