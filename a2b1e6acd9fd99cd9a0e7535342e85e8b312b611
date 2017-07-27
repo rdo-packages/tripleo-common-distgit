@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8c0949_74b020f5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 289
+      },
+      "writtenOn": "2017-07-27T15:21:12Z",
+      "side": 1,
+      "message": "https://bugs.launchpad.net/tripleo/+bug/1706997",
+      "revId": "a2b1e6acd9fd99cd9a0e7535342e85e8b312b611",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
