@@ -140,7 +140,7 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
-%{_datadir}/%{upstream_name}/healthcheck
+%{_datadir}/%{name}/healthcheck
 
 %files devtools
 %{_bindir}/pull-puppet-modules
