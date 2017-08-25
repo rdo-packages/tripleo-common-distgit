@@ -18,18 +18,24 @@ BuildRequires:  python-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 
+Requires: GitPython
 Requires: python-jinja2
-Requires: python-glanceclient >= 2.5.0
-Requires: python-heatclient
+Requires: python-gitdb
+Requires: python-glanceclient >= 2.7.0
+Requires: python-heatclient >= 1.6.1
 Requires: python-ironic-inspector-client >= 1.5.0
-Requires: python-ironicclient >= 1.11.0
-Requires: python-novaclient >= 1:7.1.0
-Requires: python-openstack-mistral >= 3.0.0
-Requires: python-oslo-config >= 2:3.14.0
-Requires: python-oslo-log >= 3.11.0
-Requires: python-oslo-utils >= 3.18.0
+Requires: python-ironicclient >= 1.14.0
+Requires: python-novaclient >= 1:9.0.0
+Requires: python-mistral-lib >= 0.2.0
+Requires: python-mistralclient >= 3.1.0
+Requires: python-netaddr
+Requires: python-netifaces
+Requires: python-oslo-concurrency >= 3.8.0
+Requires: python-oslo-config >= 2:4.0.0
+Requires: python-oslo-log >= 3.22.0
+Requires: python-oslo-utils >= 3.20.0
 Requires: python-six >= 1.9.0
-Requires: python-docker-py
+Requires: python-docker >= 2.0.0
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
