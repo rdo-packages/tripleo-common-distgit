@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5a890539_c8b6603d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-09-06T18:36:02Z",
+      "side": 1,
+      "message": "Yeah, sorry, I wasn\u0027t implying the RDO maintainers didn\u0027t do their job correctly. It\u0027s of course something that we -- the tripleo developers -- missed when we merged the patch that introduced the new dependency in tripleo-common. I know that I\u0027ll personally try to be more careful in the future.\n\nOhh... I see, you\u0027re right that we were testing with python-docker on the undercloud. The python-docker dependency was pulled by the openstack-kolla package thanks to https://review.rdoproject.org/r/gitweb?p\u003dopenstack/kolla-distgit.git;a\u003dcommitdiff;h\u003d7a8009ecc1ed3472daf8ab5d103999c65271acaf.",
+      "parentUuid": "5a890539_8810d84f",
+      "revId": "f1b691cc89898d21868694a7d569600f95c7e32c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a890539_c81ae06d",
         "filename": "/COMMIT_MSG",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2017-09-06T16:34:48Z",
       "side": 1,
       "message": "There is also Requires: python-docker \u003e\u003d 2.0.0 in openstack-kolla.spec and Kolla change was not done in backward compatible way.",
+      "revId": "f1b691cc89898d21868694a7d569600f95c7e32c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_28a60411",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2017-09-06T18:36:02Z",
+      "side": 1,
+      "message": "Right, thanks for the complement of information. IIUC with my change both kolla and tripleo-common can be installed alongside, in this case it will pick up the new python-docker package and we will end up in the same situation that we\u0027ve been testing all this time in upstream tripleo CI.",
+      "parentUuid": "5a890539_c81ae06d",
       "revId": "f1b691cc89898d21868694a7d569600f95c7e32c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
