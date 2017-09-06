@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_8810d84f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-09-06T16:34:48Z",
+      "side": 1,
+      "message": "To clarify: all RDO/upstream testing was with python-docker-2.3 since was added to the deps repo begging of July, which is well before the Pike release.\nRequirements sync is package maintainer\u0027s responsibility to keep it in sync with upstream throughout the cycle, if that doesn\u0027t happen, semi-automated scripted sync is done by the RDO release team, distribution-wide.",
+      "revId": "f1b691cc89898d21868694a7d569600f95c7e32c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_c81ae06d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-09-06T16:34:48Z",
+      "side": 1,
+      "message": "There is also Requires: python-docker \u003e\u003d 2.0.0 in openstack-kolla.spec and Kolla change was not done in backward compatible way.",
+      "revId": "f1b691cc89898d21868694a7d569600f95c7e32c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
