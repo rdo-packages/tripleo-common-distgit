@@ -35,7 +35,7 @@ Requires: python-oslo-config >= 2:4.0.0
 Requires: python-oslo-log >= 3.22.0
 Requires: python-oslo-utils >= 3.20.0
 Requires: python-six >= 1.9.0
-Requires: python-docker >= 2.0.0
+Requires: python-docker-py
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
