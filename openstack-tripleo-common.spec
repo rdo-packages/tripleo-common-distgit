@@ -17,6 +17,7 @@ BuildRequires:  git
 BuildRequires:  python-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
+BuildRequires:  openstack-macros
 
 Requires: GitPython
 Requires: python-jinja2
@@ -49,7 +50,7 @@ rm -rf *.egg-info
 
 # Remove the requirements file so that pbr hooks don't add it
 # to distutils requires_dist config
-rm -rf {test-,}requirements.txt tools/{pip,test}-requires
+%py_req_cleanup
 
 %build
 %{__python2} setup.py build
