@@ -146,6 +146,8 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_bindir}/bootstrap_host_only_eval
+%{_bindir}/bootstrap_host_only_exec
 %{_datadir}/%{name}/healthcheck
 
 %files devtools
