@@ -99,6 +99,10 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
+# Need this until https://review.openstack.org/506594 lands:
+touch %{buildroot}%{_bindir}/bootstrap_host_only_eval
+touch %{buildroot}%{_bindir}/bootstrap_host_only_exec
+
 %description
 Python library for code used by TripleO projects.
 
@@ -146,6 +150,8 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_bindir}/bootstrap_host_only_eval
+%{_bindir}/bootstrap_host_only_exec
 %{_datadir}/%{name}/healthcheck
 
 %files devtools
