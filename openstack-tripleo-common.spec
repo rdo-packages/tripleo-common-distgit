@@ -99,6 +99,17 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
+# Need this until https://review.openstack.org/506594 lands:
+if [ ! -f %{_bindir}/bootstrap_host_only_eval ]; then
+  echo -e '#!/bin/bash\nexit 0\n' > %{buildroot}%{_bindir}/bootstrap_host_only_eval
+  chmod 0755 %{buildroot}%{_bindir}/bootstrap_host_only_eval
+  echo -e '#!/bin/bash\nexit 0\n' > %{buildroot}%{_bindir}/bootstrap_host_only_exec
+  chmod 0755 %{buildroot}%{_bindir}/bootstrap_host_only_exec
+else
+  echo "Please remove the whole if/else block in spec file if you ever read this in build logs!"
+  exit 1
+fi
+
 %description
 Python library for code used by TripleO projects.
 
@@ -146,6 +157,8 @@ don't fit in a product.
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
+%{_bindir}/bootstrap_host_only_eval
+%{_bindir}/bootstrap_host_only_exec
 %{_datadir}/%{name}/healthcheck
 
 %files devtools
