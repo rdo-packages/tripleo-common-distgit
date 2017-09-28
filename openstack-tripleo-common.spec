@@ -111,6 +111,15 @@ else
   exit 1
 fi
 
+# Need this until https://review.openstack.org/508189 lands:
+if [ ! -f %{_bindir}/tripleo-config-download ]; then
+  echo -e '#!/bin/bash\nexit 0\n' > %{buildroot}%{_bindir}/tripleo-config-download
+  chmod 0755 %{buildroot}%{_bindir}/tripleo-config-download
+else
+  echo "Please remove the whole if/else block in spec file if you ever read this in build logs!"
+  exit 1
+fi
+
 %description
 Python library for code used by TripleO projects.
 
@@ -148,6 +157,7 @@ don't fit in a product.
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
+%{_bindir}/tripleo-config-download
 %{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
