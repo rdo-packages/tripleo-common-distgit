@@ -123,6 +123,7 @@ This package installs the files used to build containers for TripleO.
 Summary: Package for the TripleO base container image
 Requires: puppet
 Requires: lsof
+Requires: /bin/hostname
 
 %description container-base
 This package installs the dependencies and files which are required on the base
