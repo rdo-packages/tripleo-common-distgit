@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_d4ab81d4",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2017-10-04T16:34:51Z",
+      "side": 1,
+      "message": "/usr/bin/hostname or /bin/hostname ??",
+      "range": {
+        "startLine": 136,
+        "startChar": 10,
+        "endLine": 136,
+        "endChar": 23
+      },
+      "revId": "51dddf820663b20827c6035cf712b81b4dabb31c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
