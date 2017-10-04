@@ -16,6 +16,24 @@
       "revId": "69c5b52ab4c86ee1e84b7e6346ada50344cb1bad",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_9481094d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2017-10-04T16:46:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_3e9a0115",
+      "revId": "69c5b52ab4c86ee1e84b7e6346ada50344cb1bad",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
