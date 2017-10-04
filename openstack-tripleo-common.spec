@@ -101,14 +101,6 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
-# Need this until https://review.openstack.org/508189 lands:
-if [ ! -f %{buildroot}%{_bindir}/tripleo-config-download ]; then
-  echo -e '#!/bin/bash\nexit 0\n' > %{buildroot}%{_bindir}/tripleo-config-download
-  chmod 0755 %{buildroot}%{_bindir}/tripleo-config-download
-else
-  echo "Please remove the whole if/else block in spec file when https://review.openstack.org/508189 is landed"
-fi
-
 %description
 Python library for code used by TripleO projects.
 
