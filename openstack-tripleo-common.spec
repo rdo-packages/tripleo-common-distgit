@@ -105,8 +105,7 @@ if [ ! -f %{buildroot}%{_bindir}/tripleo-config-download ]; then
   echo -e '#!/bin/bash\nexit 0\n' > %{buildroot}%{_bindir}/tripleo-config-download
   chmod 0755 %{buildroot}%{_bindir}/tripleo-config-download
 else
-  echo "Please remove the whole if/else block in spec file if you ever read this in build logs!"
-  exit 1
+  echo "Please remove the whole if/else block in spec file when https://review.openstack.org/508189 is landed"
 fi
 
 %description
