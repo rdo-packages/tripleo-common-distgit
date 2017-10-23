@@ -40,6 +40,7 @@ Requires: python-docker >= 2.0.0
 Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
+Requires: skopeo
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
