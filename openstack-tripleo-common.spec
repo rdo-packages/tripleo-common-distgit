@@ -41,6 +41,7 @@ Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
+Requires: ansible
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
@@ -86,6 +87,10 @@ if [ -d healthcheck ]; then
   cp -ar healthcheck %{buildroot}/%{_datadir}/%{name}/
 else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/healthcheck
+fi
+
+if [ ! -d roles ]; then
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/roles
 fi
 
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
@@ -144,6 +149,7 @@ don't fit in a product.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
+%{_datadir}/ansible/roles
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
