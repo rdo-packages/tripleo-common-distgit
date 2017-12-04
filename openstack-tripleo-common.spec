@@ -41,6 +41,7 @@ Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
+Requires: ansible
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
@@ -144,6 +145,7 @@ don't fit in a product.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
+/usr/share/ansible/roles/
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
