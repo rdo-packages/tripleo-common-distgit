@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_127449fc",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 62
+      },
+      "writtenOn": "2017-12-04T20:02:01Z",
+      "side": 1,
+      "message": "I\u0027m unsure about the path of Ansible roles",
+      "range": {
+        "startLine": 162,
+        "startChar": 0,
+        "endLine": 162,
+        "endChar": 25
+      },
+      "revId": "4b41fe0ac030afecba3413223f0db72f4b321b29",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
