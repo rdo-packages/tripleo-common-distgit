@@ -41,6 +41,7 @@ Requires: python-passlib
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
+Requires: ansible
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
@@ -86,6 +87,12 @@ if [ -d healthcheck ]; then
   cp -ar healthcheck %{buildroot}/%{_datadir}/%{name}/
 else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/healthcheck
+fi
+
+if [ -d roles ]; then
+  cp -ar roles %{buildroot}/%{_datadir}/%{name}/
+else
+  mkdir -p %{buildroot}/%{_datadir}/%{name}/roles
 fi
 
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
@@ -153,6 +160,7 @@ don't fit in a product.
 %{_bindir}/bootstrap_host_only_eval
 %{_bindir}/bootstrap_host_only_exec
 %{_datadir}/%{name}/healthcheck
+%{_datadir}/%{name}/roles
 
 %files devtools
 %{_bindir}/pull-puppet-modules
