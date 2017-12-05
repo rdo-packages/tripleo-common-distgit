@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_855f1572",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 9
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 96
+      },
+      "writtenOn": "2017-12-05T21:43:52Z",
+      "side": 1,
+      "message": "s/%{name}/ansible",
+      "revId": "0275cf6662dae948e8b13e887c18813f0c465ea5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
