@@ -45,6 +45,23 @@
       "revId": "0618745e51731fc72880689933b69de90de9ef44",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_0546c5bf",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2017-12-05T20:40:14Z",
+      "side": 1,
+      "message": "This will still work, though /usr/share/ansible/roles is the new preferred path. I\u0027m not sure if there\u0027s a spec variable for that like %{_datadir}.\n\nAll custom plugin types, as well as roles, are moving to /usr/share/ansible rather than /etc/ansible.\n\nCustom plugins will be in /usr/share/ansible/plugins/[plugin type]",
+      "revId": "0618745e51731fc72880689933b69de90de9ef44",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
