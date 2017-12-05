@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_257909fd",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 96
+      },
+      "writtenOn": "2017-12-05T21:13:51Z",
+      "side": 1,
+      "message": "i think this is redundant given setup.cfg, but meh",
+      "revId": "d8be7e7f235c73fb5fae3f10e878942c67ee85ed",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
