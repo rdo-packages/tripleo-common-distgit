@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_05c1652e",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 96
+      },
+      "writtenOn": "2017-12-05T19:55:53Z",
+      "side": 1,
+      "message": "this should be %{_datadir}/ansible/roles",
+      "revId": "5ab90d198d8aaf3d0008b203dac5b053e8b04721",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
