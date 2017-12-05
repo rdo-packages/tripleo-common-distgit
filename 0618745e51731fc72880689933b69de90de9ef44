@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_45099d94",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-12-05T20:16:49Z",
+      "side": 1,
+      "message": "implicit dep from ansible",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 23
+      },
+      "revId": "0618745e51731fc72880689933b69de90de9ef44",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_05d8851c",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-12-05T20:16:49Z",
+      "side": 1,
+      "message": "implicit dep from ansible",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 25
+      },
+      "revId": "0618745e51731fc72880689933b69de90de9ef44",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
