@@ -26,6 +26,7 @@ Requires: python-glanceclient >= 2.7.0
 Requires: python-heatclient >= 1.6.1
 Requires: python-ironic-inspector-client >= 1.5.0
 Requires: python-ironicclient >= 1.14.0
+Requires: python-keystoneclient
 Requires: python-novaclient >= 1:9.0.0
 Requires: python-mistral-lib >= 0.2.0
 Requires: python-mistralclient >= 3.1.0
