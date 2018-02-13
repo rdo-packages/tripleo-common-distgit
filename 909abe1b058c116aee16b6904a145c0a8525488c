@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aaa499b_febe56d3",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-02-13T12:08:51Z",
+      "side": 1,
+      "message": "don\u0027t need this, python-keystoneclient depends on keystoneauth1",
+      "revId": "909abe1b058c116aee16b6904a145c0a8525488c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
