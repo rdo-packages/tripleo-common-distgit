@@ -16,6 +16,24 @@
       "revId": "909abe1b058c116aee16b6904a145c0a8525488c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aaa499b_7ecb6673",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 254
+      },
+      "writtenOn": "2018-02-13T12:12:51Z",
+      "side": 1,
+      "message": "Aren\u0027t we worried if they decided to stop using this dependency for some reason? keystoneauth1 is directly referenced in the tripleo-common codebase and would break - https://github.com/openstack/tripleo-common/blob/master/tripleo_common/utils/keystone.py#L19-L21",
+      "parentUuid": "7aaa499b_febe56d3",
+      "revId": "909abe1b058c116aee16b6904a145c0a8525488c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
