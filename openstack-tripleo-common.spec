@@ -14,31 +14,33 @@ Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}
 
 BuildArch:      noarch
 BuildRequires:  git
-BuildRequires:  python-setuptools
+BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
+BuildRequires:  python2-pbr
 BuildRequires:  openstack-macros
 
 Requires: GitPython
-Requires: python-jinja2
-Requires: python-gitdb
-Requires: python-glanceclient >= 2.7.0
-Requires: python-heatclient >= 1.6.1
+Requires: python2-jinja2
+Requires: python2-glanceclient >= 1:2.8.0
+Requires: python2-heatclient >= 1.10.0
 Requires: python-ironic-inspector-client >= 1.5.0
-Requires: python-ironicclient >= 1.14.0
-Requires: python-keystoneclient
-Requires: python-novaclient >= 1:9.0.0
-Requires: python-mistral-lib >= 0.2.0
-Requires: python-mistralclient >= 3.1.0
-Requires: python-netaddr
+Requires: python2-ironicclient >= 2.2.0
+Requires: python2-keystoneclient
+Requires: python2-novaclient >= 1:9.1.0
+Requires: python2-mistral-lib >= 0.3.0
+Requires: python2-mistralclient >= 3.1.0
+Requires: python2-netaddr
 Requires: python-netifaces
-Requires: python-oslo-concurrency >= 3.8.0
-Requires: python-oslo-config >= 2:4.0.0
-Requires: python-oslo-log >= 3.22.0
-Requires: python-oslo-utils >= 3.20.0
-Requires: python-six >= 1.9.0
-Requires: python-docker >= 2.0.0
-Requires: python-passlib
+Requires: python2-oslo-concurrency >= 3.25.0
+Requires: python2-oslo-config >= 2:5.1.0
+Requires: python2-oslo-log >= 3.36.0
+Requires: python2-oslo-utils >= 3.33.0
+Requires: python2-six >= 1.10.0
+Requires: python2-docker >= 2.4.2
+Requires: python2-passlib
+Requires: python2-keystoneauth1 >= 3.3.0
+Requires: python2-pbr >= 2.0.0
+Requires: python2-zaqarclient >= 1.0.0
 Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
