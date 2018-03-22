@@ -12,6 +12,9 @@ URL:            https://github.com/rdo-management/tripleo-common
 
 Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
 
+# FIXME(ykarel) Remove once we get https://review.openstack.org/#/c/555056/ in queens
+Patch0001:      0001-Add-openvswitch-element-back-in.patch
+
 BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  python2-setuptools
