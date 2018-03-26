@@ -149,6 +149,9 @@ don't fit in a product.
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
+if [ -f scripts/tripleo-overcloud-cert ]; then
+    %{_bindir}/tripleo-overcloud-cert
+fi
 %{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
