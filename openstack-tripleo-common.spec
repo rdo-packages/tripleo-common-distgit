@@ -147,6 +147,7 @@ don't fit in a product.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
+%{_bindir}/request-overcloud-cert
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/create_freeipa_enroll_envfile.py
