@@ -149,6 +149,7 @@ don't fit in a product.
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
+%{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
