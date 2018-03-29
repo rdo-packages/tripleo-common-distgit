@@ -63,6 +63,10 @@ rm -rf *.egg-info
 
 %install
 %{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+
+# TODO remove when https://review.openstack.org/554926 is merged
+touch %{buildroot}%{_bindir}/tripleo-overcloud-cert
+
 if [ -d %{buildroot}/%{_datadir}/%{upstream_name} ]; then
   mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
 else
@@ -149,6 +153,7 @@ don't fit in a product.
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
+%{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
