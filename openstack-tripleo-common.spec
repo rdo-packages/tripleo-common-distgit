@@ -19,6 +19,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  openstack-macros
 BuildRequires:  python2-cryptography
+BuildRequires:  python2-futures
 
 Requires: GitPython
 Requires: python2-jinja2
@@ -48,6 +49,7 @@ Requires: skopeo
 Requires: ansible
 Requires: python2-tenacity >= 3.2.1
 Requires: python2-cryptography
+Requires: python2-futures
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
