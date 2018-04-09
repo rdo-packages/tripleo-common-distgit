@@ -46,6 +46,7 @@ Requires: python-paramiko
 Requires: skopeo
 Requires: ansible
 Requires: python2-tenacity >= 3.2.1
+Requires: python2-cryptography
 
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
