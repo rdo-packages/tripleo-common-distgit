@@ -151,7 +151,6 @@ don't fit in a product.
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_prefix}/lib/heat/undercloud_heat_plugins
-%{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
