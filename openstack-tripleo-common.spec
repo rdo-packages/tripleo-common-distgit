@@ -123,6 +123,10 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
+if [ -d %{buildroot}%{_bindir}/upgrade-non-controller.sh ]; then
+  rm -rf %{buildroot}%{_bindir}/upgrade-non-controller.sh
+fi
+
 %check
 python setup.py test
 
@@ -159,7 +163,6 @@ don't fit in a product.
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
 %{_prefix}/lib/heat/undercloud_heat_plugins
-%{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
