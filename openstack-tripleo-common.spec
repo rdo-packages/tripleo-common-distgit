@@ -158,8 +158,8 @@ don't fit in a product.
 %doc README.rst AUTHORS ChangeLog
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
+%exclude %{_bindir}/upgrade-non-controller.sh
 %{_prefix}/lib/heat/undercloud_heat_plugins
-%{_bindir}/upgrade-non-controller.sh
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
