@@ -118,6 +118,9 @@ fi
 
 install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
 
+%check
+python setup.py test
+
 %description
 Python library for code used by TripleO projects.
 
