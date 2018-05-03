@@ -47,6 +47,7 @@ Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
 Requires: ansible
+Requires: ansible-role-container-registry
 Requires: python2-tenacity >= 3.2.1
 Requires: python2-cryptography
 Requires: python2-futures
