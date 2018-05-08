@@ -97,6 +97,10 @@ if [ ! -d roles ]; then
   mkdir -p %{buildroot}/%{_datadir}/ansible/roles
 fi
 
+if [ ! -d ansible_plugins ]; then
+  mkdir -p %{buildroot}/%{_datadir}/ansible/plugins
+fi
+
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
 mv %{buildroot}/%{_datadir}/%{name}/container-images %{buildroot}/%{_datadir}/%{name}-containers/
 # compat symlink
@@ -154,6 +158,7 @@ don't fit in a product.
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
 %{_datadir}/ansible/roles
+%{_datadir}/ansible/plugins
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
