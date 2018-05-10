@@ -1,0 +1,32 @@
+From 3f12a00533e32d894ad18627e6be1163c0dd5ad8 Mon Sep 17 00:00:00 2001
+From: Alex Schultz <aschultz@redhat.com>
+Date: Thu, 10 May 2018 10:18:55 -0600
+Subject: [PATCH] Add yum update to base
+
+In order to handle out of date distro containers, let's add a yum update
+to the kolla base container to ensure that at the end of the base
+container build we'll have the latest base packages installed. This will
+ensure we don't hit out of date dependency bits in later containers. For
+example, we currently only have 7.4 base centos image available from the
+upstream but we're install the base repos in the base build. This would
+mean that we'd be getting 7.5 packages in later containers but might
+possibly have a mix of 7.4 and 7.5 packages installed.
+
+Change-Id: Ifdfc1b84b7b6a306868260611271fd49bdd594d4
+Related-Bug: #1770355
+---
+
+diff --git a/container-images/tripleo_kolla_template_overrides.j2 b/container-images/tripleo_kolla_template_overrides.j2
+index 2891ade..30f1fb9 100644
+--- a/container-images/tripleo_kolla_template_overrides.j2
++++ b/container-images/tripleo_kolla_template_overrides.j2
+@@ -565,4 +565,9 @@
+ RUN mkdir -p /etc/ssh && touch /etc/ssh/ssh_known_hosts
+ # workaround for LP#1765802
+ STOPSIGNAL SIGTERM
++# In order to ensure that we have the last base packages, we would like to do
++# a yum update in the kolla base image. All the other images should inherit this
++# but if the base distro container is out of date (i.g. 7.4 but 7.5 is out) this
++# will pull in the updated packages available. Related issue LP#1770355
++RUN yum update -y
+ {% endblock %}

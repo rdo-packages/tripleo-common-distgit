@@ -12,6 +12,9 @@ URL:            https://github.com/rdo-management/tripleo-common
 
 Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
 
+# FIXME(aschultz): remove once we get https://review.openstack.org/#/c/567636/
+Patch0001:      0001-Add-yum-update-to-base.patch
+
 BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  python2-setuptools
