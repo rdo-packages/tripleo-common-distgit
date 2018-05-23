@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_75481f2e",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 192
+      },
+      "writtenOn": "2018-05-23T14:22:19Z",
+      "side": 1,
+      "message": "revisiting this after a while :)\nreally not sure this is the right thing to do here. We have a chicken/egg situation where https://review.openstack.org/#/c/557694/ won\u0027t merge because this fails when we remove the script, and then this won\u0027t build because the script is still there. not sure if this exclude will help.\n\nplease halp if you know what i can do.",
+      "revId": "4f259f0bcb36b6ad8a6f3bc6b093c664f16f163d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
