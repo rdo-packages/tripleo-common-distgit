@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_35a74751",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 303
+      },
+      "writtenOn": "2018-05-24T15:36:25Z",
+      "side": 1,
+      "message": "You probably want -f",
+      "range": {
+        "startLine": 126,
+        "startChar": 5,
+        "endLine": 126,
+        "endChar": 7
+      },
+      "revId": "ceec87ba6c19509c8a54e41cad7a76ff6f427ea9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
