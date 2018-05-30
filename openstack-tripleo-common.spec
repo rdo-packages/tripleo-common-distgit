@@ -53,6 +53,7 @@ Requires: ansible
 
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
+Requires: ansible-role-tripleo-modify-image
 Requires: ansible-pacemaker
 Requires: ansible-tripleo-ipsec
 %if 0%{rhosp} == 1
