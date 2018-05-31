@@ -47,8 +47,17 @@ Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
 Requires: ansible
+
+# Ansible roles used by TripleO
 Requires: ansible-role-container-registry
-Requires: python2-tenacity >= 3.2.1
+Requires: ansible-pacemaker
+Requires: ceph-ansible
+Requires: ansible-tripleo-ipsec
+%if 0%{rhosp} == 1
+Requires: ansible-role-redhat-subscription
+%endif
+
+Requires: python3-tenacity >= 3.2.1
 Requires: python2-cryptography
 Requires: python2-futures
 
