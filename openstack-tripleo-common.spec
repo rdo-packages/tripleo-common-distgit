@@ -1,3 +1,6 @@
+# guard for package OSP does not support
+%global rhosp 0
+
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name tripleo-common
 
@@ -47,8 +50,16 @@ Requires: %{name}-containers = %{version}-%{release}
 Requires: python-paramiko
 Requires: skopeo
 Requires: ansible
+
+# Ansible roles used by TripleO
 Requires: ansible-role-container-registry
-Requires: python2-tenacity >= 3.2.1
+Requires: ansible-pacemaker
+Requires: ansible-tripleo-ipsec
+%if 0%{rhosp} == 1
+Requires: ansible-role-redhat-subscription
+%endif
+
+Requires: python3-tenacity >= 3.2.1
 Requires: python2-cryptography
 Requires: python2-futures
 
