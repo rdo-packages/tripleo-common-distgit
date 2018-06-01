@@ -1,0 +1,9 @@
+Code-Review+2: Alex Schultz <aschultz@next-development.com>
+Code-Review+2: Steve Baker <sbaker@redhat.com>
+Workflow+1: Steve Baker <sbaker@redhat.com>
+Verified+2: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-by: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-at: Fri, 01 Jun 2018 01:53:26 +0000
+Reviewed-on: https://review.rdoproject.org/r/13985
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
