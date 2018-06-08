@@ -190,6 +190,7 @@ don't fit in a product.
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
+%{_bindir}/container-check
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
