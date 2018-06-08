@@ -1,6 +1,7 @@
 # guard for package OSP does not support
 %global rhosp 0
 
+
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name tripleo-common
 
@@ -190,6 +191,7 @@ don't fit in a product.
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
+%{_bindir}/container-check
 
 %files container-base
 %{_bindir}/bootstrap_host_exec
