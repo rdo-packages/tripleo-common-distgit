@@ -1,0 +1,9 @@
+Code-Review+2: Emilien Macchi <emilien@redhat.com>
+Code-Review+2: hguemar <hguemar@fedoraproject.org>
+Workflow+1: hguemar <hguemar@fedoraproject.org>
+Verified+2: hguemar <hguemar@fedoraproject.org>
+Submitted-by: hguemar <hguemar@fedoraproject.org>
+Submitted-at: Tue, 12 Jun 2018 11:29:43 +0000
+Reviewed-on: https://review.rdoproject.org/r/14143
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
