@@ -4,6 +4,12 @@
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name tripleo-common
 
+%if 0%{?fedora}
+%global with_python3 1
+%endif
+
+%global common_desc Python library for code used by TripleO projects.
+
 %{?!_licensedir:%global license %%doc}
 
 Name:           openstack-tripleo-common
@@ -16,13 +22,42 @@ URL:            https://github.com/rdo-management/tripleo-common
 Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}-%{version}.tar.gz
 
 BuildArch:      noarch
+
+%description
+%{common_desc}
+
+%package -n python2-%{upstream_name}
+Summary:        Python library for code used by TripleO projects.
+
 BuildRequires:  git
 BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  openstack-macros
 BuildRequires:  python2-cryptography
+BuildRequires:  python2-docker
 BuildRequires:  python2-futures
+BuildRequires:  GitPython
+BuildRequires:  python2-fixtures
+BuildRequires:  python2-glanceclient
+BuildRequires:  python2-heatclient
+BuildRequires:  python2-ironicclient
+BuildRequires:  python2-ironic-inspector-client
+BuildRequires:  python2-mistral-lib
+BuildRequires:  python2-mistralclient
+BuildRequires:  python2-novaclient
+BuildRequires:  python2-oslo-concurrency
+BuildRequires:  python2-oslo-i18n
+BuildRequires:  python2-oslo-log
+BuildRequires:  python2-oslo-utils
+BuildRequires:  python2-oslotest
+BuildRequires:  python2-paramiko
+BuildRequires:  python2-passlib
+BuildRequires:  python2-swiftclient
+BuildRequires:  python2-tenacity
+BuildRequires:  python2-testtools
+BuildRequires:  python2-zaqarclient
+BuildRequires:  python-yaml
 
 Requires: GitPython
 Requires: python2-jinja2
@@ -67,6 +102,90 @@ Requires: python2-futures
 Provides:  tripleo-common = %{version}-%{release}
 Obsoletes: tripleo-common < %{version}-%{release}
 
+Provides: openstack-tripleo-common = %{version}-%{release}
+Obsoletes: openstack-tripleo-common < %{version}-%{release}
+
+%{?python_provide:%python_provide python2-%{upstream_name}}
+
+%description -n python2-%{upstream_name}
+%{common_desc}
+
+%if 0%{?with_python3}
+%package -n python3-%{upstream_name}
+Summary:        Python library for code used by TripleO projects.
+
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-pbr
+BuildRequires:  python3-cryptography
+BuildRequires:  python3-docker
+BuildRequires:  python3-GitPython
+BuildRequires:  python3-fixtures
+BuildRequires:  python3-glanceclient
+BuildRequires:  python3-heatclient
+BuildRequires:  python3-ironicclient
+BuildRequires:  python3-ironic-inspector-client
+BuildRequires:  python3-mistral-lib
+BuildRequires:  python3-mistralclient
+BuildRequires:  python3-novaclient
+BuildRequires:  python3-oslo-concurrency
+BuildRequires:  python3-oslo-i18n
+BuildRequires:  python3-oslo-log
+BuildRequires:  python3-oslo-utils
+BuildRequires:  python3-oslotest
+BuildRequires:  python3-paramiko
+BuildRequires:  python3-passlib
+BuildRequires:  python3-swiftclient
+BuildRequires:  python3-tenacity
+BuildRequires:  python3-testtools
+BuildRequires:  python3-zaqarclient
+BuildRequires:  python3-yaml
+
+Requires: python3-GitPython
+Requires: python3-jinja2
+Requires: python3-glanceclient >= 1:2.8.0
+Requires: python3-heatclient >= 1.10.0
+Requires: python3-ironic-inspector-client >= 1.5.0
+Requires: python3-ironicclient >= 2.2.0
+Requires: python3-keystoneclient
+Requires: python3-novaclient >= 1:9.1.0
+Requires: python3-mistral-lib >= 0.3.0
+Requires: python3-mistralclient >= 3.1.0
+Requires: python3-netaddr
+Requires: python3-netifaces
+Requires: python3-oslo-concurrency >= 3.25.0
+Requires: python3-oslo-config >= 2:5.1.0
+Requires: python3-oslo-log >= 3.36.0
+Requires: python3-oslo-utils >= 3.33.0
+Requires: python3-six >= 1.10.0
+Requires: python3-docker >= 2.4.2
+Requires: python3-passlib
+Requires: python3-keystoneauth1 >= 3.3.0
+Requires: python3-pbr >= 2.0.0
+Requires: python3-zaqarclient >= 1.0.0
+Requires: %{name}-containers = %{version}-%{release}
+Requires: python3-paramiko
+Requires: skopeo
+Requires: ansible
+
+# Ansible roles used by TripleO
+Requires: ansible-role-container-registry
+Requires: ansible-role-tripleo-modify-image
+Requires: ansible-pacemaker
+Requires: ansible-tripleo-ipsec
+%if 0%{rhosp} == 1
+Requires: ansible-role-redhat-subscription
+%endif
+
+Requires: python3-tenacity >= 3.2.1
+Requires: python3-cryptography
+
+%{?python_provide:%python_provide python3-%{upstream_name}}
+
+%description -n python3-%{upstream_name}
+%{common_desc}
+%endif
+
 %prep
 %autosetup -n %{upstream_name}-%{upstream_version} -S git
 rm -rf *.egg-info
@@ -76,10 +195,16 @@ rm -rf *.egg-info
 %py_req_cleanup
 
 %build
-%{__python2} setup.py build
+%py2_build
+%if 0%{?with_python3}
+%py3_build
+%endif
 
 %install
-%{__python2} setup.py install -O1 --skip-build --root=%{buildroot}
+%py2_install
+%if 0%{?with_python3}
+%py3_install
+%endif
 
 # TODO remove when https://review.openstack.org/554926 is merged
 touch %{buildroot}%{_bindir}/tripleo-overcloud-cert
@@ -140,10 +265,13 @@ if [ -f %{buildroot}%{_bindir}/upgrade-non-controller.sh ]; then
 fi
 
 %check
-python setup.py test
+%if 0%{?with_python3}
+%{__python3} setup.py test
+%endif
+%{__python2} setup.py test
 
 %description
-Python library for code used by TripleO projects.
+%{common_desc}
 
 %package containers
 Summary: Files for building TripleO containers
@@ -169,7 +297,7 @@ Requires: %{name} = %{version}-%{release}
 This package installs the TripleO tools for developers and CI that typically
 don't fit in a product.
 
-%files
+%files -n python2-%{upstream_name}
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
 %{python2_sitelib}/tripleo_common*
@@ -187,6 +315,27 @@ don't fit in a product.
 %{_sysconfdir}/sudoers.d/%{upstream_name}
 %{_datadir}/ansible/roles
 %{_datadir}/ansible/plugins
+
+%if 0%{?with_python3}
+%files -n python3-%{upstream_name}
+%license LICENSE
+%doc README.rst AUTHORS ChangeLog
+%{python3_sitelib}/tripleo_common*
+%exclude %{python3_sitelib}/tripleo_common/test*
+%{_prefix}/lib/heat/undercloud_heat_plugins
+%{_bindir}/tripleo-build-images
+%{_bindir}/upload-puppet-modules
+%{_bindir}/upload-swift-artifacts
+%{_bindir}/run-validation
+%{_bindir}/tripleo-config-download
+%{_bindir}/tripleo-overcloud-cert
+%{_bindir}/create_freeipa_enroll_envfile.py
+%{_datadir}/%{name}
+%{_datadir}/%{upstream_name}
+%{_sysconfdir}/sudoers.d/%{upstream_name}
+%{_datadir}/ansible/roles
+%{_datadir}/ansible/plugins
+%endif
 
 %files containers
 %{_datadir}/%{name}-containers/container-images
