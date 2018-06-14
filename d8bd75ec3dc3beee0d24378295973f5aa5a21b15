@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_9bdbd21b",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-06-14T14:41:51Z",
+      "side": 1,
+      "message": "this should be python3",
+      "range": {
+        "startLine": 145,
+        "startChar": 15,
+        "endLine": 145,
+        "endChar": 23
+      },
+      "revId": "d8bd75ec3dc3beee0d24378295973f5aa5a21b15",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
