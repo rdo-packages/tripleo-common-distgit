@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_9b819292",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-06-14T16:59:54Z",
+      "side": 1,
+      "message": "Also in fedora unit tests are failing because of missing BuildRequires [1]. It\u0027s not failing in centos because it\u0027s actually not running any unit test, probably because of some missing buildrequires or something like that.\n\n[1] https://review.rdoproject.org/jenkins/job/DLRN-rpmbuild-fedora/1950/consoleFull",
+      "revId": "9c9f8e264a7bf18f7dab39c1e1910824b4d762e2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
