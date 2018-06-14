@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_5b8f7a23",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-06-14T14:10:56Z",
+      "side": 1,
+      "message": "This is efectively renaming the package from openstack-tripleo-common to python2-tripleo-common so you need to add some provides/obsoletes for backwards compatibility:\n\nProvides:  openstack-tripleo-common \u003d %{version}-%{release}\nObsoletes: openstack-tripleo-common \u003c %{version}-%{release}",
+      "revId": "8183781328aa4c955580827375478cfaea6ad6b5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
