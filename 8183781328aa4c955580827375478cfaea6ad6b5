@@ -16,6 +16,24 @@
       "revId": "8183781328aa4c955580827375478cfaea6ad6b5",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab921fb_9bc4f240",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 123
+      },
+      "writtenOn": "2018-06-14T14:22:13Z",
+      "side": 1,
+      "message": "OK, I\u0027ll add the provides/obsoletes.\n\nIs the new python2-tripleo-common name ok, or should I keep the \u0027openstack\u0027 in it, something like openstack-python2-tripleo-common?",
+      "parentUuid": "bab921fb_5b8f7a23",
+      "revId": "8183781328aa4c955580827375478cfaea6ad6b5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
