@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_1b358245",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-06-14T15:00:21Z",
+      "side": 1,
+      "message": "futures is python2 only requirement, you need to remove this line.\n\nhttps://github.com/openstack/tripleo-common/blob/master/requirements.txt#L30",
+      "range": {
+        "startLine": 101,
+        "startChar": 1,
+        "endLine": 101,
+        "endChar": 31
+      },
+      "revId": "d3fa588a35968469be78bf8b0148af77e3e0e82b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab921fb_fb39ae42",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-06-14T15:00:21Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 141,
+        "startChar": 1,
+        "endLine": 141,
+        "endChar": 25
+      },
+      "revId": "d3fa588a35968469be78bf8b0148af77e3e0e82b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
