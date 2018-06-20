@@ -182,6 +182,7 @@ don't fit in a product.
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
+%{_bindir}/container-update.py
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
