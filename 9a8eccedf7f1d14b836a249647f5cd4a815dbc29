@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_f413f15a",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-26T17:38:22Z",
+      "side": 1,
+      "message": "We don\u0027t want to maintain python2-* in Fedora,\nso let\u0027s make py2 subpackage conditional.",
+      "revId": "9a8eccedf7f1d14b836a249647f5cd4a815dbc29",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab921fb_d410ed50",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 15
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-26T17:38:22Z",
+      "side": 1,
+      "message": "along the lines of the previous comment, move %py2_* macros under %else",
+      "revId": "9a8eccedf7f1d14b836a249647f5cd4a815dbc29",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
