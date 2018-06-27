@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab921fb_94eef5ea",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 18
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-06-27T13:55:36Z",
+      "side": 1,
+      "message": "There one \u0027|\u0027 missing. Also, if unit tests fail, Fedora tends to not like using \u0027|| :\u0027. Maybe \u0027 || true\u0027 will work.",
+      "range": {
+        "startLine": 266,
+        "startChar": 26,
+        "endLine": 266,
+        "endChar": 30
+      },
+      "revId": "8340cea9154f2762da3f516c4242b2e4c797da90",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
