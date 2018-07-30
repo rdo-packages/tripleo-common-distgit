@@ -316,6 +316,7 @@ don't fit in a product.
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
+%{_bindir}/tripleo-container-image-prepare
 %{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %else
@@ -329,6 +330,7 @@ don't fit in a product.
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
+%{_bindir}/tripleo-container-image-prepare
 %{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %endif
