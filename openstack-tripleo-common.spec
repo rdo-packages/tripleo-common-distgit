@@ -298,10 +298,16 @@ Requires: %{name} = %{version}-%{release}
 This package installs the TripleO tools for developers and CI that typically
 don't fit in a product.
 
+%package heat-plugins
+Summary: Heat plugins specific for the TripleO undercloud
+
+%description heat-plugins
+This package installs Heat plugins which are required for TripleO upgrade
+operations.
+
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
-%{_prefix}/lib/heat/undercloud_heat_plugins
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
@@ -349,5 +355,8 @@ don't fit in a product.
 
 %files devtools
 %{_bindir}/pull-puppet-modules
+
+%files heat-plugins
+%{_prefix}/lib/heat/undercloud_heat_plugins
 
 %changelog
