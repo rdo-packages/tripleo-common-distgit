@@ -65,6 +65,7 @@ BuildRequires:  python3-glanceclient
 BuildRequires:  python3-heatclient
 BuildRequires:  python3-ironicclient
 BuildRequires:  python3-ironic-inspector-client
+BuildRequires:  python3-metalsmith
 BuildRequires:  python3-mistral-lib
 BuildRequires:  python3-mistralclient
 BuildRequires:  python3-novaclient
@@ -89,6 +90,7 @@ Requires: python3-ironic-inspector-client >= 1.5.0
 Requires: python3-ironicclient >= 2.2.0
 Requires: python3-keystoneclient
 Requires: python3-novaclient >= 1:9.1.0
+Requires: python3-metalsmith >= 0.5.0
 Requires: python3-mistral-lib >= 0.3.0
 Requires: python3-mistralclient >= 3.1.0
 Requires: python3-netaddr
@@ -129,6 +131,7 @@ BuildRequires:  python2-glanceclient
 BuildRequires:  python2-heatclient
 BuildRequires:  python2-ironicclient
 BuildRequires:  python2-ironic-inspector-client
+BuildRequires:  python2-metalsmith
 BuildRequires:  python2-mistral-lib
 BuildRequires:  python2-mistralclient
 BuildRequires:  python2-novaclient
@@ -153,6 +156,7 @@ Requires: python-ironic-inspector-client >= 1.5.0
 Requires: python2-ironicclient >= 2.2.0
 Requires: python2-keystoneclient
 Requires: python2-novaclient >= 1:9.1.0
+Requires: python2-metalsmith >= 0.5.0
 Requires: python2-mistral-lib >= 0.3.0
 Requires: python2-mistralclient >= 3.1.0
 Requires: python2-netaddr
