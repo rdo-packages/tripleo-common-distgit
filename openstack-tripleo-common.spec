@@ -87,7 +87,7 @@ Requires: python3-jinja2
 Requires: python3-glanceclient >= 1:2.8.0
 Requires: python3-heatclient >= 1.10.0
 Requires: python3-ironic-inspector-client >= 1.5.0
-Requires: python3-ironicclient >= 2.2.0
+Requires: python3-ironicclient >= 2.3.0
 Requires: python3-keystoneclient
 Requires: python3-novaclient >= 1:9.1.0
 Requires: python3-metalsmith >= 0.5.0
@@ -95,19 +95,19 @@ Requires: python3-mistral-lib >= 0.3.0
 Requires: python3-mistralclient >= 3.1.0
 Requires: python3-netaddr
 Requires: python3-netifaces
-Requires: python3-oslo-concurrency >= 3.25.0
-Requires: python3-oslo-config >= 2:5.1.0
+Requires: python3-oslo-concurrency >= 3.26.0
+Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-utils >= 3.33.0
 Requires: python3-six >= 1.10.0
 Requires: python3-docker >= 2.4.2
 Requires: python3-passlib
-Requires: python3-keystoneauth1 >= 3.3.0
+Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
 Requires: python3-zaqarclient >= 1.0.0
 Requires: python3-paramiko
 
-Requires: python3-tenacity >= 3.2.1
+Requires: python3-tenacity >= 4.4.0
 Requires: python3-cryptography
 
 %{?python_provide:%python_provide python3-%{upstream_name}}
@@ -153,7 +153,7 @@ Requires: python2-jinja2
 Requires: python2-glanceclient >= 1:2.8.0
 Requires: python2-heatclient >= 1.10.0
 Requires: python-ironic-inspector-client >= 1.5.0
-Requires: python2-ironicclient >= 2.2.0
+Requires: python2-ironicclient >= 2.3.0
 Requires: python2-keystoneclient
 Requires: python2-novaclient >= 1:9.1.0
 Requires: python2-metalsmith >= 0.5.0
@@ -161,18 +161,18 @@ Requires: python2-mistral-lib >= 0.3.0
 Requires: python2-mistralclient >= 3.1.0
 Requires: python2-netaddr
 Requires: python-netifaces
-Requires: python2-oslo-concurrency >= 3.25.0
-Requires: python2-oslo-config >= 2:5.1.0
+Requires: python2-oslo-concurrency >= 3.26.0
+Requires: python2-oslo-config >= 2:5.2.0
 Requires: python2-oslo-log >= 3.36.0
 Requires: python2-oslo-utils >= 3.33.0
 Requires: python2-six >= 1.10.0
 Requires: python2-docker >= 2.4.2
 Requires: python2-passlib
-Requires: python2-keystoneauth1 >= 3.3.0
+Requires: python2-keystoneauth1 >= 3.4.0
 Requires: python2-pbr >= 2.0.0
 Requires: python2-zaqarclient >= 1.0.0
 Requires: python-paramiko
-Requires: python2-tenacity >= 3.2.1
+Requires: python2-tenacity >= 4.4.0
 Requires: python2-cryptography
 Requires: python2-futures
 
