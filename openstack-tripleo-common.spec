@@ -76,6 +76,7 @@ BuildRequires:  python3-oslo-utils
 BuildRequires:  python3-oslotest
 BuildRequires:  python3-paramiko
 BuildRequires:  python3-passlib
+BuildRequires:  python3-requests-mock
 BuildRequires:  python3-swiftclient
 BuildRequires:  python3-tenacity
 BuildRequires:  python3-testtools
@@ -142,6 +143,7 @@ BuildRequires:  python2-oslo-utils
 BuildRequires:  python2-oslotest
 BuildRequires:  python2-paramiko
 BuildRequires:  python2-passlib
+BuildRequires:  python2-requests-mock
 BuildRequires:  python2-swiftclient
 BuildRequires:  python2-tenacity
 BuildRequires:  python2-testtools
