@@ -359,3 +359,4 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-common/commit/?id=1b589e3529886d314ff194816ab447195ae2c154
