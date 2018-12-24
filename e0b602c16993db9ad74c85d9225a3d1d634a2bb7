@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_b825955d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-12-24T10:59:37Z",
+      "side": 1,
+      "message": "this added to python3 package only, need for python2- package also, i missed that during review :(",
+      "range": {
+        "startLine": 113,
+        "startChar": 0,
+        "endLine": 113,
+        "endChar": 50
+      },
+      "revId": "e0b602c16993db9ad74c85d9225a3d1d634a2bb7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
