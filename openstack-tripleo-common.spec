@@ -26,6 +26,7 @@ BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
 
+Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
 Requires: ansible
 # Ansible roles used by TripleO
@@ -110,7 +111,6 @@ Requires: python3-paramiko
 
 Requires: python3-tenacity >= 4.4.0
 Requires: python3-cryptography
-Requires: golang-github-vbatts-tar-split >= 0.11.1
 
 %{?python_provide:%python_provide python3-%{upstream_name}}
 
