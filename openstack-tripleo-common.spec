@@ -178,6 +178,7 @@ Requires: python-paramiko
 Requires: python2-tenacity >= 4.4.0
 Requires: python2-cryptography
 Requires: python2-futures
+Requires: golang-github-vbatts-tar-split >= 0.11.1
 
 %{?python_provide:%python_provide python2-%{upstream_name}}
 
