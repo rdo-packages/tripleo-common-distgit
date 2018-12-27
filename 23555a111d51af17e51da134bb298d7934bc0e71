@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_582201bb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-12-27T04:59:57Z",
+      "side": 1,
+      "message": "since it\u0027s required by python module [1], it\u0027s good to add it to the python subpackages. This can be cleared when the spec is moved to py3 only for Fedora.\n\n[1] https://github.com/openstack/tripleo-common/blob/b2b58b1895c09a43f4ef8bd1d3c8ee1e0c2ee4c1/tripleo_common/image/image_uploader.py#L1269",
+      "range": {
+        "startLine": 10,
+        "startChar": 9,
+        "endLine": 10,
+        "endChar": 13
+      },
+      "revId": "23555a111d51af17e51da134bb298d7934bc0e71",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
