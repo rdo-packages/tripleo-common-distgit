@@ -28,7 +28,6 @@ BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
-Requires: ansible
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
@@ -41,8 +40,10 @@ Requires: ansible-role-redhat-subscription
 Requires: %{name}-containers = %{version}-%{release}
 %if 0%{?with_python3}
 Requires: python3-%{upstream_name}
+Requires: ansible-python3
 %else
 Requires: python2-%{upstream_name}
+Requires: ansible
 %endif
 
 Provides:  tripleo-common = %{version}-%{release}
