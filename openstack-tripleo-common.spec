@@ -59,7 +59,7 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-cryptography
-%if 0%{rhosp} == 1 && 0%{?rhel} < 8
+%if 0%{rhosp} == 0 || 0%{?rhel} < 8
 BuildRequires:  python3-docker
 %endif
 BuildRequires:  python3-GitPython
@@ -104,7 +104,7 @@ Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-utils >= 3.33.0
 Requires: python3-six >= 1.10.0
-%if 0%{rhosp} == 1 && 0%{?rhel} < 8
+%if 0%{rhosp} == 0 || 0%{?rhel} < 8
 Requires: python3-docker >= 2.4.2
 %endif
 Requires: python3-passlib
