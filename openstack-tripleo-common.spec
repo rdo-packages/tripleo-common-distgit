@@ -38,6 +38,11 @@ Requires: ansible-tripleo-ipsec
 Requires: ansible-role-redhat-subscription
 %endif
 
+%if 0%{?fedora}
+Requires: buildah
+Requires: fuse-overlayfs
+%endif
+
 Requires: %{name}-containers = %{version}-%{release}
 %if 0%{?with_python3}
 Requires: python3-%{upstream_name}
