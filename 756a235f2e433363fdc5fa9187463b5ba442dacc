@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "733587d0_8ba6bd6d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-02-11T09:21:29Z",
+      "side": 1,
+      "message": "Is this not required also for rhel\u003e7?",
+      "range": {
+        "startLine": 41,
+        "startChar": 4,
+        "endLine": 41,
+        "endChar": 15
+      },
+      "revId": "756a235f2e433363fdc5fa9187463b5ba442dacc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
