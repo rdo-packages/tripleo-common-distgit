@@ -22,6 +22,23 @@
       "revId": "756a235f2e433363fdc5fa9187463b5ba442dacc",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80a6168a_5b114e54",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-02-11T09:21:35Z",
+      "side": 1,
+      "message": "Will we need it on RHEL 8?",
+      "revId": "756a235f2e433363fdc5fa9187463b5ba442dacc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
