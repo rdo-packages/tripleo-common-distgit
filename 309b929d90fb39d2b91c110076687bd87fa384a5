@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "38bcf78a_1976ae2a",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-02-27T10:19:04Z",
+      "side": 0,
+      "message": "It looks like this patch was reverted in https://review.openstack.org/568964 and never re-applied, should we keep it, or just remove all tripleo-overcloud-cert references?",
+      "range": {
+        "startLine": 220,
+        "startChar": 0,
+        "endLine": 221,
+        "endChar": 51
+      },
+      "revId": "309b929d90fb39d2b91c110076687bd87fa384a5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
