@@ -217,12 +217,6 @@ rm -rf *.egg-info
 %py2_install
 %endif
 
-# TODO remove when https://review.openstack.org/554926 is merged
-touch %{buildroot}%{_bindir}/tripleo-overcloud-cert
-
-# TODO remove when https://review.openstack.org/#/c/605399/
-touch %{buildroot}%{_bindir}/tripleo-deploy-openshift
-
 # TODO remove this when https://review.openstack.org/#/c/591346/ merges
 touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
 
@@ -340,7 +334,6 @@ don't fit in a product.
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %{_bindir}/tripleo-deploy-openshift
-%{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %else
 %files -n python2-%{upstream_name}
@@ -355,7 +348,6 @@ don't fit in a product.
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %{_bindir}/tripleo-deploy-openshift
-%{_bindir}/tripleo-overcloud-cert
 %{_bindir}/create_freeipa_enroll_envfile.py
 %endif
 
