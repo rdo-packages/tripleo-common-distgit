@@ -223,6 +223,9 @@ touch %{buildroot}%{_bindir}/tripleo-overcloud-cert
 # TODO remove when https://review.openstack.org/#/c/605399/
 touch %{buildroot}%{_bindir}/tripleo-deploy-openshift
 
+# TODO remove this when https://review.openstack.org/#/c/591346/ merges
+touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
+
 if [ -d %{buildroot}/%{_datadir}/%{upstream_name} ]; then
   mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
 else
