@@ -217,12 +217,6 @@ rm -rf *.egg-info
 %py2_install
 %endif
 
-# TODO remove when https://review.openstack.org/554926 is merged
-touch %{buildroot}%{_bindir}/tripleo-overcloud-cert
-
-# TODO remove when https://review.openstack.org/#/c/605399/
-touch %{buildroot}%{_bindir}/tripleo-deploy-openshift
-
 # TODO remove this when https://review.openstack.org/#/c/591346/ merges
 touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
 
