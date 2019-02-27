@@ -64,9 +64,6 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-cryptography
-%if 0%{rhosp} == 0 || 0%{?rhel} < 8
-BuildRequires:  python3-docker
-%endif
 BuildRequires:  python3-GitPython
 BuildRequires:  python3-fixtures
 BuildRequires:  python3-glanceclient
@@ -109,9 +106,6 @@ Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-utils >= 3.33.0
 Requires: python3-six >= 1.10.0
-%if 0%{rhosp} == 0 || 0%{?rhel} < 8
-Requires: python3-docker >= 2.4.2
-%endif
 Requires: python3-passlib
 Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
@@ -134,7 +128,6 @@ BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  python2-cryptography
-BuildRequires:  python2-docker
 BuildRequires:  python2-futures
 BuildRequires:  GitPython
 BuildRequires:  python2-fixtures
@@ -178,7 +171,6 @@ Requires: python2-oslo-config >= 2:5.2.0
 Requires: python2-oslo-log >= 3.36.0
 Requires: python2-oslo-utils >= 3.33.0
 Requires: python2-six >= 1.10.0
-Requires: python2-docker >= 2.4.2
 Requires: python2-passlib
 Requires: python2-keystoneauth1 >= 3.4.0
 Requires: python2-pbr >= 2.0.0
