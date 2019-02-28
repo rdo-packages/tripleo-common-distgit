@@ -1,0 +1,9 @@
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Code-Review+2: Emilien Macchi <emilien@redhat.com>
+Workflow+1: Emilien Macchi <emilien@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 28 Feb 2019 14:34:30 +0000
+Reviewed-on: https://review.rdoproject.org/r/19019
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
