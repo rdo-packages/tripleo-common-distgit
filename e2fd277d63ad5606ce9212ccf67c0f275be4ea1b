@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "db1a02b3_881bb483",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 62
+      },
+      "writtenOn": "2019-03-13T15:11:32Z",
+      "side": 1,
+      "message": "please write a commit message, on why you\u0027re doing this patch ...",
+      "revId": "e2fd277d63ad5606ce9212ccf67c0f275be4ea1b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
