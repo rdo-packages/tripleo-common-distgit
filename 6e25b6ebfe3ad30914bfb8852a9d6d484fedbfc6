@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "266beff8_ec1b170d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2019-03-13T15:21:07Z",
+      "side": 1,
+      "message": "duplicate description introduce here",
+      "revId": "6e25b6ebfe3ad30914bfb8852a9d6d484fedbfc6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
