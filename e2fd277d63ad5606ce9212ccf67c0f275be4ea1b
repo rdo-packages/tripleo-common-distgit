@@ -16,6 +16,24 @@
       "revId": "e2fd277d63ad5606ce9212ccf67c0f275be4ea1b",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6fe7fd39_084ab2f4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2019-03-13T15:20:23Z",
+      "side": 1,
+      "message": "Done, I thought initial single line comment was sufficient, as this is a warning from rpmlint",
+      "parentUuid": "db1a02b3_881bb483",
+      "revId": "e2fd277d63ad5606ce9212ccf67c0f275be4ea1b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
