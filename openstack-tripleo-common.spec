@@ -276,9 +276,6 @@ export PYTHON=/usr/bin/python3
 %{__python2} setup.py test
 %endif
 
-%description
-%{common_desc}
-
 %package containers
 Summary: Files for building TripleO containers
 
