@@ -14,7 +14,7 @@
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        9.4.0
+Version:        9.5.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
@@ -357,6 +357,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Thu Mar 14 2019 RDO <dev@lists.rdoproject.org> 9.5.0-1
+- Update to 9.5.0
+
 * Tue Sep 25 2018 RDO <dev@lists.rdoproject.org> 9.4.0-1
 - Update to 9.4.0
 
