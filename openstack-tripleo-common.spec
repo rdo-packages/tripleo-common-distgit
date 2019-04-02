@@ -96,7 +96,7 @@ Requires: python3-ironic-inspector-client >= 1.5.0
 Requires: python3-ironicclient >= 2.3.0
 Requires: python3-keystoneclient
 Requires: python3-novaclient >= 1:9.1.0
-Requires: python3-metalsmith >= 0.5.0
+Requires: python3-metalsmith >= 0.9.0
 Requires: python3-mistral-lib >= 0.3.0
 Requires: python3-mistralclient >= 3.1.0
 Requires: python3-netaddr
@@ -111,6 +111,9 @@ Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
 Requires: python3-zaqarclient >= 1.0.0
 Requires: python3-paramiko
+Requires: python3-eventlet >= 0.20.0
+Requires: python3-jsonschema >= 2.6.0
+Requires: python3-requests >= 2.18.0
 
 Requires: python3-tenacity >= 4.4.0
 Requires: python3-cryptography
@@ -161,7 +164,7 @@ Requires: python-ironic-inspector-client >= 1.5.0
 Requires: python2-ironicclient >= 2.3.0
 Requires: python2-keystoneclient
 Requires: python2-novaclient >= 1:9.1.0
-Requires: python2-metalsmith >= 0.5.0
+Requires: python2-metalsmith >= 0.9.0
 Requires: python2-mistral-lib >= 0.3.0
 Requires: python2-mistralclient >= 3.1.0
 Requires: python2-netaddr
@@ -179,6 +182,9 @@ Requires: python-paramiko
 Requires: python2-tenacity >= 4.4.0
 Requires: python2-cryptography
 Requires: python2-futures
+Requires: python2-eventlet >= 0.20.0
+Requires: python2-jsonschema >= 2.6.0
+Requires: python2-requests >= 2.18.0
 
 %{?python_provide:%python_provide python2-%{upstream_name}}
 
