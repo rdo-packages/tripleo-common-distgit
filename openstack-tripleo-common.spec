@@ -38,8 +38,8 @@ Requires: ansible-tripleo-ipsec
 Requires: ansible-role-redhat-subscription
 %endif
 
-%if 0%{?fedora}
 Requires: buildah
+%if 0%{?fedora}
 Requires: fuse-overlayfs
 %endif
 
