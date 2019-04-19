@@ -15,7 +15,7 @@
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
 Version:        10.7.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
@@ -28,7 +28,7 @@ BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
-Requires: ansible
+Requires: ansible >= 2.6.0
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
@@ -106,7 +106,7 @@ Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-utils >= 3.33.0
 Requires: python3-six >= 1.10.0
-Requires: python3-passlib
+Requires: python3-passlib >= 1.7.0
 Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
 Requires: python3-zaqarclient >= 1.0.0
@@ -174,7 +174,7 @@ Requires: python2-oslo-config >= 2:5.2.0
 Requires: python2-oslo-log >= 3.36.0
 Requires: python2-oslo-utils >= 3.33.0
 Requires: python2-six >= 1.10.0
-Requires: python2-passlib
+Requires: python2-passlib >= 1.7.0
 Requires: python2-keystoneauth1 >= 3.4.0
 Requires: python2-pbr >= 2.0.0
 Requires: python2-zaqarclient >= 1.0.0
@@ -359,6 +359,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Thu Apr 23 2019 Gauvain Pocentek <gauvain.pocentek@objectif-libre.com> 10.7.0-2
+- Version passlib and ansible dependencies
+
 * Thu Apr 18 2019 RDO <dev@lists.rdoproject.org> 10.7.0-1
 - Update to 10.7.0
 
