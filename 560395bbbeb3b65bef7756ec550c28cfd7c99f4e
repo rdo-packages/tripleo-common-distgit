@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8275dc3a_55dceef7",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 303
+      },
+      "writtenOn": "2019-05-03T15:48:29Z",
+      "side": 1,
+      "message": "Please also add the python2 version",
+      "revId": "560395bbbeb3b65bef7756ec550c28cfd7c99f4e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
