@@ -105,6 +105,7 @@ Requires: python3-oslo-concurrency >= 3.26.0
 Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-utils >= 3.33.0
+Requires: python3-oslo-rootwrap >= 5.8.0
 Requires: python3-six >= 1.10.0
 Requires: python3-passlib >= 1.7.0
 Requires: python3-keystoneauth1 >= 3.4.0
