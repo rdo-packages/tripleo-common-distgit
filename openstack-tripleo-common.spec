@@ -77,6 +77,7 @@ BuildRequires:  python3-novaclient
 BuildRequires:  python3-oslo-concurrency
 BuildRequires:  python3-oslo-i18n
 BuildRequires:  python3-oslo-log
+BuildRequires:  python3-oslo-rootwrap
 BuildRequires:  python3-oslo-utils
 BuildRequires:  python3-oslotest
 BuildRequires:  python3-paramiko
@@ -104,6 +105,7 @@ Requires: python3-netifaces
 Requires: python3-oslo-concurrency >= 3.26.0
 Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
+Requires: python3-oslo-rootwrap >= 5.8.0
 Requires: python3-oslo-utils >= 3.33.0
 Requires: python3-six >= 1.10.0
 Requires: python3-passlib >= 1.7.0
@@ -146,6 +148,7 @@ BuildRequires:  python2-oslo-concurrency
 BuildRequires:  python2-oslo-i18n
 BuildRequires:  python2-oslo-log
 BuildRequires:  python2-oslo-utils
+BuildRequires:  python2-oslo-rootwrap
 BuildRequires:  python2-oslotest
 BuildRequires:  python2-paramiko
 BuildRequires:  python2-passlib
@@ -172,6 +175,7 @@ Requires: python-netifaces
 Requires: python2-oslo-concurrency >= 3.26.0
 Requires: python2-oslo-config >= 2:5.2.0
 Requires: python2-oslo-log >= 3.36.0
+Requires: python2-oslo-rootwrap >= 5.8.0
 Requires: python2-oslo-utils >= 3.33.0
 Requires: python2-six >= 1.10.0
 Requires: python2-passlib >= 1.7.0
