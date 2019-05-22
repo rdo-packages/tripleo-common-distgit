@@ -332,7 +332,11 @@ don't fit in a product.
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
+%if 0%{rhosp} == 0
 %{_bindir}/tripleo-deploy-openshift
+%else
+%exclude %{_bindir}/tripleo-deploy-openshift
+%endif
 %{_bindir}/create_freeipa_enroll_envfile.py
 %else
 %files -n python2-%{upstream_name}
@@ -346,7 +350,11 @@ don't fit in a product.
 %{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
+%if 0%{rhosp} == 0
 %{_bindir}/tripleo-deploy-openshift
+%else
+%exclude %{_bindir}/tripleo-deploy-openshift
+%endif
 %{_bindir}/create_freeipa_enroll_envfile.py
 %endif
 
