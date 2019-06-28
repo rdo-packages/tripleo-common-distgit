@@ -45,9 +45,9 @@ Requires: fuse-overlayfs
 
 Requires: %{name}-containers = %{version}-%{release}
 %if 0%{?with_python3}
-Requires: python3-%{upstream_name}
+Requires: python3-%{upstream_name} = %{version}-%{release}
 %else
-Requires: python2-%{upstream_name}
+Requires: python2-%{upstream_name} = %{version}-%{release}
 %endif
 
 Provides:  tripleo-common = %{version}-%{release}
