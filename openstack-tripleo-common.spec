@@ -62,6 +62,7 @@ Summary:        Python library for code used by TripleO projects.
 
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
+BuildRequires:  python3-eventlet
 BuildRequires:  python3-pbr
 BuildRequires:  python3-cryptography
 BuildRequires:  python3-GitPython
@@ -70,6 +71,7 @@ BuildRequires:  python3-glanceclient
 BuildRequires:  python3-heatclient
 BuildRequires:  python3-ironicclient
 BuildRequires:  python3-ironic-inspector-client
+BuildRequires:  python3-jinja2
 BuildRequires:  python3-metalsmith
 BuildRequires:  python3-mistral-lib
 BuildRequires:  python3-mistralclient
@@ -131,6 +133,7 @@ Summary:        Python library for code used by TripleO projects.
 
 BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
+BuildRequires:  python2-eventlet
 BuildRequires:  python2-pbr
 BuildRequires:  python2-cryptography
 BuildRequires:  python2-futures
@@ -140,6 +143,7 @@ BuildRequires:  python2-glanceclient
 BuildRequires:  python2-heatclient
 BuildRequires:  python2-ironicclient
 BuildRequires:  python2-ironic-inspector-client
+BuildRequires:  python2-jinja2
 BuildRequires:  python2-metalsmith
 BuildRequires:  python2-mistral-lib
 BuildRequires:  python2-mistralclient
