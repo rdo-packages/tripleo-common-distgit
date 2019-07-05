@@ -14,8 +14,8 @@
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        10.7.0
-Release:        2%{?dist}
+Version:        10.8.0
+Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
@@ -70,6 +70,7 @@ BuildRequires:  python3-glanceclient
 BuildRequires:  python3-heatclient
 BuildRequires:  python3-ironicclient
 BuildRequires:  python3-ironic-inspector-client
+BuildRequires:  python3-jinja2
 BuildRequires:  python3-metalsmith
 BuildRequires:  python3-mistral-lib
 BuildRequires:  python3-mistralclient
@@ -140,6 +141,7 @@ BuildRequires:  python2-glanceclient
 BuildRequires:  python2-heatclient
 BuildRequires:  python2-ironicclient
 BuildRequires:  python2-ironic-inspector-client
+BuildRequires:  python2-jinja2
 BuildRequires:  python2-metalsmith
 BuildRequires:  python2-mistral-lib
 BuildRequires:  python2-mistralclient
@@ -371,6 +373,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Fri Jul 05 2019 RDO <dev@lists.rdoproject.org> 10.8.0-1
+- Update to 10.8.0
+
 * Thu Apr 23 2019 Gauvain Pocentek <gauvain.pocentek@objectif-libre.com> 10.7.0-2
 - Version passlib and ansible dependencies
 
