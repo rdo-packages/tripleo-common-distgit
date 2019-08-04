@@ -1,4 +1,4 @@
-# guard for package OSP does not support
+# DNM guard for package OSP does not support
 %global rhosp 0
 
 %{!?upstream_version: %global upstream_version %{version}}
