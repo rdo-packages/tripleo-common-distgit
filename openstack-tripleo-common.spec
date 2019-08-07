@@ -226,6 +226,9 @@ rm -rf *.egg-info
 # TODO remove this when https://review.openstack.org/#/c/591346/ merges
 touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
 
+# TODO remove this when https://review.openstack.org/#/c/675136/ merges
+touch %{buildroot}%{_bindir}/tripleo-deploy-openshift
+
 if [ -d %{buildroot}/%{_datadir}/%{upstream_name} ]; then
   mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
 else
