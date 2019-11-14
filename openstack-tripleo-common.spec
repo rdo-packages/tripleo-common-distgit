@@ -333,10 +333,10 @@ don't fit in a product.
 %doc README.rst AUTHORS ChangeLog
 %{python3_sitelib}/tripleo_common*
 %exclude %{python3_sitelib}/tripleo_common/test*
+%exclude %{_bindir}/run-validation
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
-%{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %if 0%{rhosp} == 0
@@ -351,10 +351,10 @@ don't fit in a product.
 %doc README.rst AUTHORS ChangeLog
 %{python2_sitelib}/tripleo_common*
 %exclude %{python2_sitelib}/tripleo_common/test*
+%exclude %{_bindir}/run-validation
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
-%{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %if 0%{rhosp} == 0
