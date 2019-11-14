@@ -336,7 +336,6 @@ don't fit in a product.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
-%{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %if 0%{rhosp} == 0
@@ -354,7 +353,6 @@ don't fit in a product.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
-%{_bindir}/run-validation
 %{_bindir}/tripleo-config-download
 %{_bindir}/tripleo-container-image-prepare
 %if 0%{rhosp} == 0
