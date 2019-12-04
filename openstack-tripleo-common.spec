@@ -90,6 +90,7 @@ BuildRequires:  python3-tenacity
 BuildRequires:  python3-testtools
 BuildRequires:  python3-zaqarclient
 BuildRequires:  python3-yaml
+BuildRequires:  python3-ansible-runner
 
 Requires: python3-GitPython
 Requires: python3-jinja2
@@ -121,6 +122,8 @@ Requires: python3-requests >= 2.18.0
 
 Requires: python3-tenacity >= 4.4.0
 Requires: python3-cryptography
+
+Requires: python3-ansible-runner >= 1.4.4
 
 %{?python_provide:%python_provide python3-%{upstream_name}}
 
@@ -162,6 +165,7 @@ BuildRequires:  python2-testtools
 BuildRequires:  python2-zaqarclient
 BuildRequires:  python-requests-mock
 BuildRequires:  python-yaml
+BuildRequires:  python2-ansible-runner
 
 Requires: GitPython
 Requires: python2-jinja2
@@ -193,6 +197,7 @@ Requires: python2-futures
 Requires: python2-eventlet >= 0.20.0
 Requires: python2-jsonschema >= 2.6.0
 Requires: python2-requests >= 2.18.0
+Requires: python2-ansible-runner >= 1.4.4
 
 %{?python_provide:%python_provide python2-%{upstream_name}}
 
