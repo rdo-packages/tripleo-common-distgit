@@ -33,6 +33,7 @@ Requires: ansible >= 2.6.0
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
 Requires: ansible-pacemaker
+Requires: ansible-tripleo >= 1.0.0
 Requires: ansible-tripleo-ipsec
 %if 0%{rhosp} == 1
 Requires: ansible-role-redhat-subscription
