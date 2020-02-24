@@ -101,7 +101,7 @@ Requires: python3-ironicclient >= 2.3.0
 Requires: python3-keystoneclient
 Requires: python3-novaclient >= 1:9.1.0
 Requires: python3-metalsmith >= 0.9.0
-Requires: python3-mistral-extra>= 9.0.0
+Requires: python3-mistral-extra >= 9.0.0
 Requires: python3-mistral-lib >= 0.3.0
 Requires: python3-mistralclient >= 3.1.0
 Requires: python3-netaddr
@@ -177,6 +177,7 @@ Requires: python2-ironicclient >= 2.3.0
 Requires: python2-keystoneclient
 Requires: python2-novaclient >= 1:9.1.0
 Requires: python2-metalsmith >= 0.13.0
+Requires: python2-mistral-extra>= 9.0.0
 Requires: python2-mistral-lib >= 0.3.0
 Requires: python2-mistralclient >= 3.1.0
 Requires: python2-netaddr
