@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1cec2118_016f1c9c",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-02-25T06:22:47Z",
+      "side": 1,
+      "message": "i have proposed revert of original as i centos8 is not consistent https://trunk.rdoproject.org/centos8-master/status_report.html\n\nhttps://review.rdoproject.org/r/#/c/25327/",
+      "revId": "306d6a4b3bcaa668e3897934ba6b7d5db3df3b61",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "915aba4d_1e42e454",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-02-25T06:22:47Z",
+      "side": 1,
+      "message": "space",
+      "revId": "306d6a4b3bcaa668e3897934ba6b7d5db3df3b61",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
