@@ -1,0 +1,8 @@
+Code-Review+2: Chandan Kumar <chkumar@redhat.com>
+Workflow+1: Chandan Kumar <chkumar@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 25 Feb 2020 07:46:18 +0000
+Reviewed-on: https://review.rdoproject.org/r/25327
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
