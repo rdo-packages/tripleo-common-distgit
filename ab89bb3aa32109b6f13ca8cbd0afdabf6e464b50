@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6cc6c243_a91d1df0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-03-24T05:23:05Z",
+      "side": 1,
+      "message": "mistral-extra dependency is installed via mistral package in mistral-containers, so atleast this patch will not help in clearing the issue. The issue happened in those jobs as mistral-api container were mistral populate happens is outdated. Now with latest promotion of containers issues shouldn\u0027t be seen as these containers consist of latest mistral/mistral-extra/mistral-lib packages. But still need to find why mistral-api didn\u0027t updated but mistral-engine got.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 62
+      },
+      "revId": "ab89bb3aa32109b6f13ca8cbd0afdabf6e464b50",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
