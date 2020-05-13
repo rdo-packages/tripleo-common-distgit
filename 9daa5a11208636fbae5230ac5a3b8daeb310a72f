@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ec7d505_70df8531",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-05-13T09:11:49Z",
+      "side": 1,
+      "message": "This conditiona was only for fedora, so let\u0027s totally clean the requires or keep the conditional in case we want to re-add fedora in future (i\u0027d just remove it as we are not testing in fedora anymore).",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 24
+      },
+      "revId": "9daa5a11208636fbae5230ac5a3b8daeb310a72f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "78b71515_22d4e5b7",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-05-13T09:11:49Z",
+      "side": 1,
+      "message": "is this actually runtime requirement?, apparently yes but i don\u0027t see it in requirements.txt",
+      "range": {
+        "startLine": 115,
+        "startChar": 0,
+        "endLine": 115,
+        "endChar": 31
+      },
+      "revId": "9daa5a11208636fbae5230ac5a3b8daeb310a72f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
