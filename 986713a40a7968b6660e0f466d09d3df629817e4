@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0fe01eba_a868acc2",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-05-13T06:32:03Z",
+      "side": 1,
+      "message": "this can be cleaned up",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 6
+      },
+      "revId": "986713a40a7968b6660e0f466d09d3df629817e4",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f87b14f_3cd24ad5",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-05-13T06:32:03Z",
+      "side": 1,
+      "message": "let\u0027s clean this also as unit test works now.",
+      "revId": "986713a40a7968b6660e0f466d09d3df629817e4",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
