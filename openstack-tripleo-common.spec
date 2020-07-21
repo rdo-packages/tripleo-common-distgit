@@ -28,11 +28,7 @@ BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
-%if 0%{rhosp} == 1
 Requires: ansible >= 2.9.10
-%else
-Requires: ansible >= 2.8.0
-%endif
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
