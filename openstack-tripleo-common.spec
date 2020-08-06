@@ -392,3 +392,4 @@ don't fit in a product.
 - Update to 11.3.0
 
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-common/commit/?id=77287f7525d25a9ffd43db8ffae0f70c9d09dac3
