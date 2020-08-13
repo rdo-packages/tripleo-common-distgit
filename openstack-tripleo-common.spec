@@ -238,11 +238,11 @@ don't fit in a product.
 %{python3_sitelib}/tripleo_common*
 %exclude %{python3_sitelib}/tripleo_common/test*
 %exclude %{_bindir}/run-validation
+%exclude %{_bindir}/tripleo-container-image-prepare
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
 %{_bindir}/tripleo-config-download
-%{_bindir}/tripleo-container-image-prepare
 %if 0%{rhosp} == 0
 %{_bindir}/tripleo-deploy-openshift
 %else
