@@ -15,7 +15,7 @@
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
 Version:        10.8.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
@@ -28,7 +28,7 @@ BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
-Requires: ansible >= 2.6.0
+Requires: ansible >= 2.7.0
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
@@ -374,7 +374,11 @@ don't fit in a product.
 %files devtools
 %{_bindir}/pull-puppet-modules
 
+
 %changelog
+* Thu Oct 15 2020 Yatin Karel <ykarel@redhat.com> 10.8.2-2
+- Update minimum requirement of ansible to 2.7
+
 * Thu Dec 12 2019 RDO <dev@lists.rdoproject.org> 10.8.2-1
 - Update to 10.8.2
 
