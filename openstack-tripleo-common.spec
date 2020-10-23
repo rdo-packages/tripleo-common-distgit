@@ -119,9 +119,9 @@ Requires: python3-pbr >= 2.0.0
 Requires: python3-zaqarclient >= 1.0.0
 Requires: python3-paramiko
 Requires: python3-eventlet >= 0.20.0
-Requires: python3-jsonschema >= 2.6.0
+Requires: python3-jsonschema >= 3.2.0
 Requires: python3-requests >= 2.18.0
-Requires: python3-tenacity >= 4.4.0
+Requires: python3-tenacity >= 6.1.0
 Requires: python3-cryptography
 Requires: python3-ansible-runner >= 1.4.4
 
