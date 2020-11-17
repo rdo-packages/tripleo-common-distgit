@@ -31,10 +31,10 @@ BuildArch:      noarch
 BuildRequires:  /usr/bin/gpgv2
 %endif
 
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  openstack-macros
 
-Requires: golang-github-vbatts-tar-split >= 0.11.1
+Requires: golang-git-corehub-vbatts-tar-split >= 0.11.1
 Requires: skopeo
 Requires: ansible >= 2.9.10
 # Ansible roles used by TripleO
