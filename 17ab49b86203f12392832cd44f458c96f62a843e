@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "33f4a8d6_35bb2046",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 629
+      },
+      "writtenOn": "2021-02-03T15:56:34Z",
+      "side": 1,
+      "message": "maybe we can use an if here?\n\n  if [[ ! -f \"healthcheck/http-healthcheck.py\" ]]; then\n    touch healthcheck/http-healthcheck.py\n  fi",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 210,
+        "endChar": 37
+      },
+      "revId": "17ab49b86203f12392832cd44f458c96f62a843e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
