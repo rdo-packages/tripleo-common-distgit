@@ -22,6 +22,30 @@
       "revId": "17ab49b86203f12392832cd44f458c96f62a843e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28b1f109_9d1a3aad",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 547
+      },
+      "writtenOn": "2021-02-03T15:58:20Z",
+      "side": 1,
+      "message": "not really useful imho - touch doesn\u0027t do anything in reality, worst case it alters the mtime.\nAnd once the related change is merged, I\u0027ll be able to drop that touchy thing :).",
+      "parentUuid": "33f4a8d6_35bb2046",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 210,
+        "endChar": 37
+      },
+      "revId": "17ab49b86203f12392832cd44f458c96f62a843e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
