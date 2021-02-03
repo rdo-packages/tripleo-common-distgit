@@ -6,6 +6,9 @@
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %global with_python3 1
+%global pyver 3
+%else
+%global pyver 2
 %endif
 
 %global common_desc Python library for code used by TripleO projects.
@@ -204,6 +207,7 @@ Requires: python2-requests >= 2.18.0
 
 %prep
 %autosetup -n %{upstream_name}-%{upstream_version} -S git
+sed -i '#/usr/bin/python#/usr/bin/python{pyver}#' healthcheck/http-healthcheck.py
 rm -rf *.egg-info
 
 # Remove the requirements file so that pbr hooks don't add it
