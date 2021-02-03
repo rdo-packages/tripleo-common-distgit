@@ -6,6 +6,9 @@
 
 %if 0%{?fedora} || 0%{?rhel} > 7
 %global with_python3 1
+%global pyver 3
+%else
+%global pyver 2
 %endif
 
 %global common_desc Python library for code used by TripleO projects.
@@ -25,6 +28,7 @@ BuildArch:      noarch
 
 BuildRequires:  git
 BuildRequires:  openstack-macros
+BuildRequires: /usr/bin/pathfix.py
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
@@ -205,6 +209,9 @@ Requires: python2-requests >= 2.18.0
 %prep
 %autosetup -n %{upstream_name}-%{upstream_version} -S git
 rm -rf *.egg-info
+# TODO(cjeanner) remove the "touch" call once https://review.opendev.org/c/openstack/tripleo-common/+/772412 merges
+touch healthcheck/http-healthcheck.py
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" healthcheck/http-healthcheck.py
 
 # Remove the requirements file so that pbr hooks don't add it
 # to distutils requires_dist config
