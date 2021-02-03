@@ -25,6 +25,7 @@ BuildArch:      noarch
 
 BuildRequires:  git
 BuildRequires:  openstack-macros
+BuildRequires: /usr/bin/pathfix.py
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
 Requires: skopeo
@@ -205,6 +206,11 @@ Requires: python2-requests >= 2.18.0
 %prep
 %autosetup -n %{upstream_name}-%{upstream_version} -S git
 rm -rf *.egg-info
+# TODO(cjeanner) remove the "touch" call once https://review.opendev.org/c/openstack/tripleo-common/+/772412 merges
+touch healthcheck/http-healthcheck.py
+%if 0%{?with_python3}
+pathfix.py -pni "%{__python3} %{py3_shbang_opts}" healthcheck/http-healthcheck.py
+%endif
 
 # Remove the requirements file so that pbr hooks don't add it
 # to distutils requires_dist config
