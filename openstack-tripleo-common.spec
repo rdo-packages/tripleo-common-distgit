@@ -167,30 +167,10 @@ else
 fi
 ln -s %{name} %{buildroot}%{_datadir}/%{upstream_name}
 
-if [ -d workbooks ]; then
-  cp -ar workbooks %{buildroot}/%{_datadir}/%{name}/
-else
-  mkdir -p %{buildroot}/%{_datadir}/%{name}/workbooks
-fi
-
-if [ -d playbooks ]; then
-  cp -ar playbooks %{buildroot}/%{_datadir}/%{name}/
-else
-  mkdir -p %{buildroot}/%{_datadir}/%{name}/playbooks
-fi
-
 if [ -d healthcheck ]; then
   cp -ar healthcheck %{buildroot}/%{_datadir}/%{name}/
 else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/healthcheck
-fi
-
-if [ ! -d roles ]; then
-  mkdir -p %{buildroot}/%{_datadir}/ansible/roles
-fi
-
-if [ ! -d ansible_plugins ]; then
-  mkdir -p %{buildroot}/%{_datadir}/ansible/plugins
 fi
 
 mkdir -p %{buildroot}/%{_datadir}/%{name}-containers
@@ -250,8 +230,6 @@ don't fit in a product.
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 %{_sysconfdir}/sudoers.d/%{upstream_name}
-%{_datadir}/ansible/roles
-%{_datadir}/ansible/plugins
 
 %files -n python3-%{upstream_name}
 %license LICENSE
