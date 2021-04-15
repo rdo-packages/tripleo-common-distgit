@@ -74,8 +74,6 @@ BuildRequires:  python3-ironicclient
 BuildRequires:  python3-ironic-inspector-client
 BuildRequires:  python3-jinja2
 BuildRequires:  python3-metalsmith
-BuildRequires:  python3-mistral-lib
-BuildRequires:  python3-mistralclient
 BuildRequires:  python3-novaclient
 BuildRequires:  python3-oslo-concurrency
 BuildRequires:  python3-oslo-i18n
@@ -103,8 +101,6 @@ Requires: python3-ironicclient >= 2.3.0
 Requires: python3-keystoneclient
 Requires: python3-novaclient >= 1:9.1.0
 Requires: python3-metalsmith >= 0.13.0
-Requires: python3-mistral-lib >= 0.3.0
-Requires: python3-mistralclient >= 3.1.0
 Requires: python3-netaddr
 Requires: python3-netifaces
 Requires: python3-oslo-concurrency >= 3.26.0
