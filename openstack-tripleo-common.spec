@@ -35,7 +35,6 @@ BuildRequires:  git-core
 BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
-Requires: skopeo
 Requires: ansible >= 2.9.10
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
