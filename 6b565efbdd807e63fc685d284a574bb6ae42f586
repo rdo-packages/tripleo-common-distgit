@@ -22,6 +22,30 @@
       "revId": "6b565efbdd807e63fc685d284a574bb6ae42f586",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b91fbb1e_53a2325e",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-08-18T13:42:52Z",
+      "side": 1,
+      "message": "dlrn not set in downstream builds? if not can also include rhel/centos macros or you mean troubles with rebaser",
+      "parentUuid": "066263fa_f1861a7d",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 6
+      },
+      "revId": "6b565efbdd807e63fc685d284a574bb6ae42f586",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
