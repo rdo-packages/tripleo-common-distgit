@@ -46,6 +46,30 @@
       "revId": "6b565efbdd807e63fc685d284a574bb6ae42f586",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43933b24_2058dedb",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2021-08-18T15:06:32Z",
+      "side": 1,
+      "message": "The dlrn macro is set in the downstream builds. However, the big problem will lie with the rebaser scripts, when they try to do \"rdopkg set-magic-comment ...\". I\u0027ve tested that, and we get the following:\n\n%if ! 0%{?dlrn}\n#\n# patches_ignore\u003dDROP-IN-RPM\n# patches_base\u003dblablabla\n#\nPatch0001: 0001-Remove-redhat-release-package-from-UBI8-image.patch\n%endif\n\nThat means that any downstream-only patches will be ignored, because they will be placed inside this %if statement, and dlrn is set to 1.",
+      "parentUuid": "b91fbb1e_53a2325e",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 6
+      },
+      "revId": "6b565efbdd807e63fc685d284a574bb6ae42f586",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
