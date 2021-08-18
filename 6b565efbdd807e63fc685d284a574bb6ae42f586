@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "066263fa_f1861a7d",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2021-08-18T07:45:56Z",
+      "side": 1,
+      "message": "I have concerns about the effect of this patch in our downstream builds. For stable/ussuri that was not an issue, but we could have trouble with Wallaby.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 6
+      },
+      "revId": "6b565efbdd807e63fc685d284a574bb6ae42f586",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
