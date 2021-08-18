@@ -13,7 +13,7 @@
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
 Version:        15.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
@@ -22,6 +22,10 @@ Source0:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}
 %if 0%{?sources_gpg} == 1
 Source101:        https://tarballs.openstack.org/%{upstream_name}/%{upstream_name}-%{version}.tar.gz.asc
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
+%endif
+
+%if ! 0%{?dlrn}
+Patch0001: 0001-Remove-redhat-release-package-from-UBI8-image.patch
 %endif
 
 BuildArch:      noarch
@@ -258,6 +262,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Wed Aug 18 2021 Yatin Karel <ykarel@redhat.com> - 15.3.0-2
+- Apply Patch for redhat-release rpm cleanup in CentOS
+
 * Mon Jul 19 2021 RDO <dev@lists.rdoproject.org> 15.3.0-1
 - Update to 15.3.0
 

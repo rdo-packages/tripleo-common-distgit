@@ -1,0 +1,40 @@
+From 10d0a257dc75c3e882cdd3dc54f8f01e6a6bf880 Mon Sep 17 00:00:00 2001
+From: Sagi Shnaidman <sshnaidm@redhat.com>
+Date: Thu, 12 Aug 2021 13:53:28 +0300
+Subject: [PATCH] Remove redhat-release package from UBI8 image
+
+Also install centos*release package when tcib_distro
+is centos.
+
+*release packages are protected by dnf, so used
+rpm commands to remove.
+
+Disable upgrades pipeline to get this fix in.
+
+(cherry picked from commit 906265c433003886d87ac29d9daf68eccb69a40c)
+
+Closes-Bug: #1939674
+Change-Id: I5467a5faa36aa1359ff9b8135a512566dff12a79
+---
+ container-images/tcib/base/base.yaml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/container-images/tcib/base/base.yaml b/container-images/tcib/base/base.yaml
+index 65767620..ae5b82ef 100644
+--- a/container-images/tcib/base/base.yaml
++++ b/container-images/tcib/base/base.yaml
+@@ -31,6 +31,11 @@ tcib_actions:
+ - run: sed -ri '/^(passwd:|group:)/ s/systemd//g' /etc/nsswitch.conf
+ - run: dnf install -y {{ tcib_packages['common'] | join(' ') }}
+ - run: mkdir -p /openstack
++- run: >-
++    if [ '{{ tcib_distro }}' == 'centos' ];then dnf download centos*release &&
++    rpm -ivh --nodeps --replacefiles *.rpm &&
++    rm -rf *.rpm &&
++    rpm -e --nodeps redhat-release; fi
+ - run: dnf update --excludepkgs redhat-release -y && dnf clean all && rm -rf /var/cache/dnf
+ tcib_cmd: kolla_start
+ tcib_entrypoint: dumb-init --single-child --
+-- 
+2.20.1
+
