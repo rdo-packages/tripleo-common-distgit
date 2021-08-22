@@ -150,11 +150,6 @@ touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
 # TODO remove this when https://review.openstack.org/#/c/675136/ merges
 touch %{buildroot}%{_bindir}/tripleo-deploy-openshift
 
-# TODO remove this when https://review.opendev.org/#/c/804899/ merges
-if [ -f "%{buildroot}%{_bindir}/upload-artifacts" ]; then
-  rm -f %{buildroot}%{_bindir}/upload-artifacts
-fi
-
 if [ -d %{buildroot}/%{_datadir}/%{upstream_name} ]; then
   mv %{buildroot}/%{_datadir}/%{upstream_name} %{buildroot}/%{_datadir}/%{name}
 else
@@ -241,6 +236,7 @@ don't fit in a product.
 %{_bindir}/tripleo-build-images
 %{_bindir}/upload-puppet-modules
 %{_bindir}/upload-swift-artifacts
+%{_bindir}/upload-artifacts
 %{_bindir}/tripleo-config-download
 %if 0%{rhosp} == 0
 %{_bindir}/tripleo-deploy-openshift
