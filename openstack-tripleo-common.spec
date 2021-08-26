@@ -145,6 +145,14 @@ rm -rf *.egg-info
 %install
 %{py3_install}
 
+# TODO remove this when https://review.opendev.org/c/openstack/tripleo-common/+/806067 merges
+if [ -f "%{buildroot}%{_bindir}/tripleo-mount-image" ]; then
+  rm -f %{buildroot}%{_bindir}/tripleo-mount-image
+fi
+if [ -f "%{buildroot}%{_bindir}/tripleo-unmount-image" ]; then
+  rm -f %{buildroot}%{_bindir}/tripleo-unmount-image
+fi
+
 # TODO remove this when https://review.openstack.org/#/c/591346/ merges
 touch %{buildroot}%{_bindir}/create_freeipa_enroll_envfile.py
 
