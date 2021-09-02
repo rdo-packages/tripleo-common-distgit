@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1ca461_420f376a",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 299
+      },
+      "writtenOn": "2021-09-02T07:02:30Z",
+      "side": 1,
+      "message": "Is this syntax okay on both centos/rhel? A quick google seems to imply it is but I am not too familiar with rpm specs",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 17
+      },
+      "revId": "b5913400981b831473b19dca3ec3348150da01ac",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
