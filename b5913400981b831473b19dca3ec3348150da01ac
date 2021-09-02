@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1e65e502_889ae8b4",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-09-02T07:10:36Z",
+      "side": 1,
+      "message": "if it\u0027s just specific to some puppet modules would be better to add the requires on those modules itself.\n\nFor adding it in container-base, i assume it\u0027s being added here as puppet modules are installed on host and bind mounted to puppet apply containers.",
+      "range": {
+        "startLine": 215,
+        "startChar": 48,
+        "endLine": 215,
+        "endChar": 77
+      },
+      "revId": "b5913400981b831473b19dca3ec3348150da01ac",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3f1ca461_420f376a",
         "filename": "openstack-tripleo-common.spec",
         "patchSetId": 1
@@ -13,6 +36,30 @@
       "writtenOn": "2021-09-02T07:02:30Z",
       "side": 1,
       "message": "Is this syntax okay on both centos/rhel? A quick google seems to imply it is but I am not too familiar with rpm specs",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 17
+      },
+      "revId": "b5913400981b831473b19dca3ec3348150da01ac",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8d78063_8d6f7fa4",
+        "filename": "openstack-tripleo-common.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-09-02T07:10:36Z",
+      "side": 1,
+      "message": "It will work whenever rhel macro is available, like centos and rhel have this macro so will work, and fedora don\u0027t so will fail for that. So it\u0027s better to use ?rhel as that doesn\u0027t fail when it\u0027s not defined.",
+      "parentUuid": "3f1ca461_420f376a",
       "range": {
         "startLine": 216,
         "startChar": 1,
