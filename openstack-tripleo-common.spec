@@ -212,6 +212,10 @@ Requires: iproute
 Requires: lsof
 Requires: procps-ng
 Requires: puppet
+# (bandini) ruby3 split out rexml to a rubygem, some puppet modules need this
+%if 0%{rhel} >= 9
+Requires: rubygem-rexml
+%endif
 Requires: sudo
 
 %description container-base
