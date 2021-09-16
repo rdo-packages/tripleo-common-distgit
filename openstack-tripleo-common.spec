@@ -179,7 +179,10 @@ else
   mkdir -p %{buildroot}/%{_datadir}/%{name}/heat_docker_agent
 fi
 
-install -p -D -m 440 sudoers %{buildroot}%{_sysconfdir}/sudoers.d/%{upstream_name}
+# TODO(aschultz): remove once this once the file is removed from tripleo-common
+if [ -f sudoers ] ; then
+  rm -rf sudoers
+fi
 
 if [ -f %{buildroot}%{_bindir}/upgrade-non-controller.sh ]; then
   rm -rf %{buildroot}%{_bindir}/upgrade-non-controller.sh
@@ -224,7 +227,6 @@ don't fit in a product.
 %{_prefix}/lib/heat/undercloud_heat_plugins
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
-%{_sysconfdir}/sudoers.d/%{upstream_name}
 
 %files -n python3-%{upstream_name}
 %license LICENSE
