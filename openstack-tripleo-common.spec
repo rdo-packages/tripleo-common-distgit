@@ -86,7 +86,6 @@ BuildRequires:  python3-requests-mock
 BuildRequires:  python3-swiftclient
 BuildRequires:  python3-tenacity
 BuildRequires:  python3-testtools
-BuildRequires:  python3-zaqarclient
 BuildRequires:  python3-yaml
 BuildRequires:  python3-ansible-runner
 BuildRequires:  python3-stestr
@@ -111,7 +110,6 @@ Requires: python3-six >= 1.10.0
 Requires: python3-passlib >= 1.7.0
 Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
-Requires: python3-zaqarclient >= 1.0.0
 Requires: python3-paramiko
 Requires: python3-eventlet >= 0.20.0
 Requires: python3-jsonschema >= 3.2.0
