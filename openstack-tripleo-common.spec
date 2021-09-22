@@ -35,7 +35,7 @@ BuildRequires:  git-core
 BuildRequires:  openstack-macros
 
 Requires: golang-github-vbatts-tar-split >= 0.11.1
-Requires: ansible >= 2.9.10
+Requires: (python3dist(ansible) >= 2.9.10 or ansible-core)
 # Ansible roles used by TripleO
 Requires: ansible-role-container-registry
 Requires: ansible-role-tripleo-modify-image
