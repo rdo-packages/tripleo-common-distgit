@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 22 Sep 2021 15:42:37 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/tripleo-common-distgit/+/35729
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
