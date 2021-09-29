@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: James Slagle <james.slagle@gmail.com>
+Workflow+1: James Slagle <james.slagle@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 29 Sep 2021 12:36:22 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/tripleo-common-distgit/+/35574
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/rpm-master
