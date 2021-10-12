@@ -1,0 +1,9 @@
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: James Slagle <james.slagle@gmail.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 12 Oct 2021 14:58:53 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/tripleo-common-distgit/+/36185
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/wallaby-rdo
