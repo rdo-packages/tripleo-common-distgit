@@ -80,7 +80,6 @@ BuildRequires:  python3-oslo-log
 BuildRequires:  python3-oslo-rootwrap
 BuildRequires:  python3-oslo-utils
 BuildRequires:  python3-oslotest
-BuildRequires:  python3-paramiko
 BuildRequires:  python3-passlib
 BuildRequires:  python3-requests-mock
 BuildRequires:  python3-swiftclient
@@ -106,11 +105,9 @@ Requires: python3-oslo-config >= 2:5.2.0
 Requires: python3-oslo-log >= 3.36.0
 Requires: python3-oslo-rootwrap >= 5.8.0
 Requires: python3-oslo-utils >= 3.33.0
-Requires: python3-six >= 1.10.0
 Requires: python3-passlib >= 1.7.0
 Requires: python3-keystoneauth1 >= 3.4.0
 Requires: python3-pbr >= 2.0.0
-Requires: python3-paramiko
 Requires: python3-eventlet >= 0.20.0
 Requires: python3-jsonschema >= 3.2.0
 Requires: python3-requests >= 2.18.0
