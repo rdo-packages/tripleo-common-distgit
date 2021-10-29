@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
+%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
 # guard for package OSP does not support
 %global rhosp 0
 
@@ -12,7 +12,7 @@
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        15.3.0
+Version:        15.4.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
@@ -275,6 +275,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Fri Oct 29 2021 RDO <dev@lists.rdoproject.org> 15.4.0-1
+- Update to 15.4.0
+
 * Mon Jul 19 2021 RDO <dev@lists.rdoproject.org> 15.3.0-1
 - Update to 15.3.0
 
