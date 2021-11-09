@@ -261,3 +261,4 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-common/commit/b1bc7147d26866fe699eb2abfb4e26cbeb254dba
