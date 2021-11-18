@@ -284,3 +284,4 @@ don't fit in a product.
 * Wed May 05 2021 RDO <dev@lists.rdoproject.org> 15.1.0-1
 - Update to 15.1.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-common/commit/65f724cb806e92ebe1c9160d53d6e1f0b275b00d
