@@ -10,8 +10,8 @@
 
 Name:           openstack-tripleo-common
 Summary:        Python library for code used by TripleO projects.
-Version:        12.4.6
-Release:        2%{?dist}
+Version:        12.4.7
+Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://github.com/rdo-management/tripleo-common
 
@@ -272,6 +272,9 @@ don't fit in a product.
 %{_bindir}/pull-puppet-modules
 
 %changelog
+* Thu Mar 10 2022 RDO <dev@lists.rdoproject.org> 12.4.7-1
+- Update to 12.4.7
+
 * Wed Aug 18 2021 Yatin Karel <ykarel@redhat.com> - 12.4.6-2
 - Apply Patch for redhat-release rpm cleanup in CentOS
 
