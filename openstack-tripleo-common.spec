@@ -223,9 +223,9 @@ don't fit in a product.
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
-%{_prefix}/lib/heat/undercloud_heat_plugins
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
+%exclude %{_prefix}/lib/heat/undercloud_heat_plugins
 
 %files -n python3-%{upstream_name}
 %license LICENSE
