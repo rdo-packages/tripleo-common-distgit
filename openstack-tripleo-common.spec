@@ -183,6 +183,11 @@ if [ -f %{buildroot}%{_bindir}/upgrade-non-controller.sh ]; then
   rm -rf %{buildroot}%{_bindir}/upgrade-non-controller.sh
 fi
 
+# Remove this when removed from tripleo-common
+if [ -d %{buildroot}/%{_prefix}/lib/heat/undercloud_heat_plugins ]; then
+  rm -rf %{buildroot}/%{_prefix}/lib/heat/undercloud_heat_plugins
+fi
+
 %check
 export PYTHON=%{__python3}
 stestr run
@@ -220,10 +225,10 @@ Requires: %{name} = %{version}-%{release}
 This package installs the TripleO tools for developers and CI that typically
 don't fit in a product.
 
+
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
-%{_prefix}/lib/heat/undercloud_heat_plugins
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
 
