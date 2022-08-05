@@ -3,6 +3,7 @@
 # guard for package OSP does not support
 %global rhosp 0
 
+# hello world
 %{!?upstream_version: %global upstream_version %{version}}
 %global upstream_name tripleo-common
 
