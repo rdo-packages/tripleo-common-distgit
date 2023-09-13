@@ -121,6 +121,27 @@ Requires: python3-ansible-runner >= 1.4.4
 %description -n python3-%{upstream_name}
 %{common_desc}
 
+
+%package -n python3-%{upstream_name}-tests
+Summary:        TripleO-common tests
+Requires:       python3-%{upstream_name} = %{version}-%{release}
+Requires:       python3-fixtures >= 3.0.0
+Requires:       python3-oslotest >= 3.2.0
+Requires:       python3-PyYAML >= 3.12
+Requires:       python3-requests-mock >= 1.2.0
+Requires:       python3-stestr >= 2.0.0
+Requires:       python3-subunit >= 1.0.0
+Requires:       python3-testscenarios >= 0.4
+Requires:       python3-testtools >= 2.2.0
+Requires:       python3-urllib3 >= 1.21.1
+
+
+%description -n python3-%{upstream_name}-tests
+%{common_desc}
+
+This package contains TripleO-common test files.
+
+
 %prep
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
@@ -231,6 +252,10 @@ don't fit in a product.
 %doc README.rst AUTHORS ChangeLog
 %{_datadir}/%{name}
 %{_datadir}/%{upstream_name}
+
+%files -n python3-%{upstream_name}-tests
+%license LICENSE
+%{python3_sitelib}/tripleo_common/test*
 
 %files -n python3-%{upstream_name}
 %license LICENSE
