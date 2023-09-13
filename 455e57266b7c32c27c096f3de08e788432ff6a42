@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 13 Sep 2023 13:19:34 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/tripleo-common-distgit/+/49974
+Project: openstack/tripleo-common-distgit
+Branch: refs/heads/wallaby-rdo
