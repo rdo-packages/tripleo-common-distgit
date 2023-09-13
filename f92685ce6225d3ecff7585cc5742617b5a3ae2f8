@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fdfcba0_9efe33f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-09-13T12:35:32Z",
+      "side": 1,
+      "message": "last release with tripleo-common was zed, so you should push this to zed-rdo branch and then cherry-pick it to the rest of releases \u003crelease\u003e-rdo where you are willing to have it",
+      "revId": "f92685ce6225d3ecff7585cc5742617b5a3ae2f8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
